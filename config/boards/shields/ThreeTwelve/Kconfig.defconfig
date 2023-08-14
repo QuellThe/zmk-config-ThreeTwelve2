@@ -1,0 +1,6 @@
+if SHIELD_THREETWELVE
+
+config ZMK_THREETWELVE
+    default "ThreeTwelve"
+
+endif
