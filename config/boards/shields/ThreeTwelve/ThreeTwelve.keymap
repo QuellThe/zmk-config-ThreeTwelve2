@@ -267,7 +267,7 @@
       label = "COMA_LBKT";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp COMA>, <&kp LBKT>;
+      bindings = <&kp COMMA>, <&kp LBKT>;
     };
 
     tdDOTRBKT: DOT_RBKT {
