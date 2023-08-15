@@ -123,7 +123,7 @@
       label = "DELBSLH";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp DEL>, <&kp BSLASH>;
+      bindings = <&kp DEL>, <&kp BSLH>;
     };
 
     tdaMINUS: A_MINUS {
@@ -464,7 +464,7 @@ keymap {
 
 &tdTABE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9       &kp N0        &kp DEL
 &kb LSHFT   &kp KP_MINUS   &kp KP_PLUS   &kp LEFT   &kp DOWN    &kp SPACE   &kp SPACE   &kp UP      &kp RIGHT   &tdLGRAVE    &tdSEMIAPOS   &kp RETURN	
-&MT LCTRL   &MT LALT       &MT LGUI 	   &tdxz      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCOMALBKT  &tdDOTRBKT    &kp FSLH
+&MT LCTRL   &MT LALT       &MT LGUI 	   &tdxz      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCOMALBKT  &tdDOTRBKT    &kp BSLH 
 
     >;
   };
