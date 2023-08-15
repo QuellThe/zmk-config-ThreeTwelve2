@@ -12,201 +12,12 @@
 #define DEFAULT 0
 #define NUM     1
 
-
-
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_fnone {
-            timeout-ms = <50>;
-            key-positions = <1 11>;
-            bindings = <&kp FN1>;
-        };
-       combos {
-        compatible = "zmk,combos";
-        combo_fntwo {
-            timeout-ms = <50>;
-            key-positions = <2 11>;
-            bindings = <&kp FN2>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_fnthree {
-            timeout-ms = <50>;
-            key-positions = <3 11>;
-            bindings = <&kp FN3>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_ffour {
-            timeout-ms = <50>;
-            key-positions = <4 11>;
-            bindings = <&kp FN4>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_ffive {
-            timeout-ms = <50>;
-            key-positions = <5 11>;
-            bindings = <&kp FN5>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_fsix {
-            timeout-ms = <50>;
-            key-positions = <0 6>;
-            bindings = <&kp FN6>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_fnseven {
-            timeout-ms = <50>;
-            key-positions = <0 7>;
-            bindings = <&kp FN7>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_fneight {
-            timeout-ms = <50>;
-            key-positions = <0 8>;
-            bindings = <&kp FN8>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_fnnine {
-            timeout-ms = <50>;
-            key-positions = <0 9>;
-            bindings = <&kp FN9>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_fn10 {
-            timeout-ms = <50>;
-            key-positions = <0 10>;
-            bindings = <&kp FN10>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_fneleven {
-            timeout-ms = <50>;
-            key-positions = <0 11>;
-            bindings = <&kp FN11>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_btzero{
-            timeout-ms = <50>;
-            key-positions = <0 11 24 35>;
-            bindings = <&bt BT_SEL 0>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_btone {
-            timeout-ms = <50>;
-            key-positions = <1 10 25 34>;
-            bindings = <&bt BT_SEL 1>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_bttwo{
-            timeout-ms = <50>;
-            key-positions = <2 9 26 33>;
-            bindings = <&bt BT_SEL 2>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_btthree {
-            timeout-ms = <50>;
-            key-positions = <3 27 8 32>;
-            bindings = <&bt BT_SEL 3>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_btfour {
-            timeout-ms = <50>;
-            key-positions = <4 28 7  31>;
-            bindings = <&bt BT_SEL 4>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_btclr {
-            timeout-ms = <50>;
-            key-positions = <5 6 29 30>;
-            bindings = <&bt BT_CLR>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_btout{
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&out OUT_TOG>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_briup {
-            timeout-ms = <50>;
-            key-positions = <16 19 20>;
-            bindings = <&kp C_BRI_UP>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_bridn{
-            timeout-ms = <50>;
-            key-positions = <15 19 20>;
-            bindings = <&kp C_BRI_DN>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_volup {
-            timeout-ms = <50>;
-            key-positions = <15 16 20>;
-            bindings = <&kp C_VOL_UP>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_mut {
-            timeout-ms = <50>;
-            key-positions = <16 17 18 19>;
-            bindings = <&kp C_MUTE>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_cpswrd {
-            timeout-ms = <50>;
-            key-positions = <12 23>;
-            bindings = <&caps_word>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_spce {
-            timeout-ms = <50>;
-            key-positions = <29 30>;
-            bindings = <&kp SPACE>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_voldn {
-            timeout-ms = <50>;
-            key-positions = <15 16 19>;
-            bindings = <&kp C_VOL_DN>;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_dfltlyr{
-            timeout-ms = <50>;
-            key-positions = <22 23>;
-            bindings = <&to 0 >;
-        };
-        combos {
-        compatible = "zmk,combos";
-        combo_numlyr{
-            timeout-ms = <50>;
-            key-positions = <34 35>;
-            bindings = <&to 1>;
-        };
-    };
+&mt {
+  tapping-term-ms = <200>;
+  flavor = "tap-preferred";
 };
+
+
 / {
   behaviors {
     hm: homerow_mods {
@@ -218,9 +29,6 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
-};
-
-/{
 
     tdTabE: Tab_Esc {
       compatible = "zmk,behavior-tap-dance";
@@ -469,34 +277,194 @@
       tapping-term-ms = <200>;
       bindings = <&kp DOT>, <&kp RBKT>;
     };
-};
+ };
+
+ combos {
+   compatible = "zmk,combos";
+   combo_fnone {
+     timeout-ms = <50>;
+     key-positions = <1 11>;
+     bindings = <&kp F1>;
+   };
+     
+   combo_fntwo {
+     timeout-ms = <50>;
+     key-positions = <2 11>;
+     bindings = <&kp F2>;
+   };
+     
+   combo_fnthree {
+     timeout-ms = <50>;
+     key-positions = <3 11>;
+     bindings = <&kp F3>;
+   };
+
+   combo_ffour {
+     timeout-ms = <50>;
+     key-positions = <4 11>;
+     bindings = <&kp F4>;
+   };
+    
+   combo_ffive {
+     timeout-ms = <50>;
+     key-positions = <5 11>;
+     bindings = <&kp F5>;
+   };
+    
+   combo_fsix {
+     timeout-ms = <50>;
+     key-positions = <0 6>;
+     bindings = <&kp F6>;
+   };
+      
+   combo_fnseven {
+     timeout-ms = <50>;
+     key-positions = <0 7>;
+     bindings = <&kp F7>;
+   };
+      
+   combo_fneight {
+     timeout-ms = <50>;
+     key-positions = <0 8>;
+     bindings = <&kp F8>;
+   };
+      
+   combo_fnnine {
+     timeout-ms = <50>;
+     key-positions = <0 9>;
+     bindings = <&kp F9>;
+   };
+      
+   
+   combo_fn10 {
+     timeout-ms = <50>;
+     key-positions = <0 10>;
+     bindings = <&kp F10>;
+   };
+      
+   combo_fneleven {
+     timeout-ms = <50>;
+     key-positions = <0 11>;
+     bindings = <&kp F11>;
+   };
+      
+  combo_btzero{
+     timeout-ms = <50>;
+     key-positions = <0 11 24 35>;
+     bindings = <&bt BT_SEL 0>;
+   };
+      
+  combo_btone {
+     timeout-ms = <50>;
+     key-positions = <1 10 25 34>;
+     bindings = <&bt BT_SEL 1>;
+    };
+      
+  combo_bttwo{
+     timeout-ms = <50>;
+     key-positions = <2 9 26 33>;
+     bindings = <&bt BT_SEL 2>;
+    };
+      
+  combo_btthree {
+     timeout-ms = <50>;
+     key-positions = <3 27 8 32>;
+     bindings = <&bt BT_SEL 3>;
+    };
+      
+  combo_btfour {
+      timeout-ms = <50>;
+      key-positions = <4 28 7  31>;
+      bindings = <&bt BT_SEL 4>;
+    };
+      
+  combo_btclr {
+      timeout-ms = <50>;
+      key-positions = <5 6 29 30>;
+      bindings = <&bt BT_CLR>;
+    };
+      
+  combo_btout{
+      timeout-ms = <50>;
+      key-positions = <17 18>;
+      bindings = <&out OUT_TOG>;
+    };
+      
+  combo_briup {
+      timeout-ms = <50>;
+      key-positions = <16 19 20>;
+      bindings = <&kp C_BRI_UP>;
+    };
+      
+  combo_bridn{
+      timeout-ms = <50>;
+      key-positions = <15 19 20>;
+      bindings = <&kp C_BRI_DN>;
+    };
+      
+  combo_volup {
+      timeout-ms = <50>;
+      key-positions = <15 16 20>;
+      bindings = <&kp C_VOL_UP>;
+    };
+      
+  combo_mut {
+      timeout-ms = <50>;
+      key-positions = <16 17 18 19>;
+      bindings = <&kp C_MUTE>;
+    };
+      
+  combo_cpswrd {
+      timeout-ms = <50>;
+      key-positions = <12 23>;
+      bindings = <&caps_word>;
+    };
+      
+  combo_spce {
+      timeout-ms = <50>;
+      key-positions = <29 30>;
+      bindings = <&kp SPACE>;
+    };
+      
+  combo_voldn {
+      timeout-ms = <50>;
+      key-positions = <15 16 19>;
+      bindings = <&kp C_VOL_DN>;
+    };
+      
+  combo_dfltlyr{
+      timeout-ms = <50>;
+      key-positions = <22 23>;
+      bindings = <&to 0 >;
+    };
+      
+  combo_numlyr{
+      timeout-ms = <50>;
+      key-positions = <34 35>;
+      bindings = <&to 1>;
+    };
+  };
+
 
 keymap {
-        compatible = "zmk,keymap";	
+    compatible = "zmk,keymap";	
 
+  default_layer {
+    bindings = <
 
-default_layer {
-           bindings = <
-
-&tdTABE     &tdqN1            &tdwN2        &tdeN3        &tdrN4         &tdtN5         &tdyN6       &tduN7       &tdiN8       &tdoN9       &tdpN0        &tdDELBSLH
-
-&kb LSHFT   &td a KP_MINUS    &tdsKP_PLUS    &tddLEFT     &tdfDOWN       &tdgSPACE      &kphSPACE    &tdjUP       &tdkRIGHT    &tdlGRAVE    &tdSEMIAPOS   &td RSHFTRET
-
-&MT LCTRL   &MT LALT          &MT LGUI 	     &tdxz        &tdcSPACE      &tdvSPACE      &tdSPACEb    &tdnSPACE     &tdmSPACE   &tdCOMALBKT  &tdDOTRBKT    &kp FSLH
+&tdTABE     &tdqN1       &tdwN2         &tdeN3      &tdrN4      &tdtN5       &tdyN6       &tduN7      &tdiN8      &tdoN9       &tdpN0        &tdDELBSLH
+&kb LSHFT   &tdaMINUS    &tdsKP_PLUS    &tddLEFT    &tdfDOWN    &tdgSPACE    &kphSPACE    &tdjUP      &tdkRIGHT   &tdlGRAVE    &tdSEMIAPOS   &tdRSHFTRET
+&MT LCTRL   &MT LALT     &MT LGUI 	    &tdxz       &tdcSPACE   &tdvSPACE    &tdSPACEb    &tdnSPACE   &tdmSPACE   &tdCOMALBKT  &tdDOTRBKT    &kp FSLH
 
             >;
         };	
 
-       Num_layer {
-bindings = <
+  Num_layer {
+    bindings = <
 
-&MT TAB ESC    &kp N1          &kp N2        &kp N3        &kp N4        &kp N5          &kp N6         &kp N7       &kp N8       &kp N9       &kp N0        &td DEL BSLASH
-
-
-&kb LSHFT      &kp KP_MINUS    &kp KP_PLUS   &kp LEFT      &kp DOWN       &td SPACE      &kp SPACE      &kp UP       &kp RIGHT    &tdLGRAVE    &tdSEMIAPOS   &kp RETURN	
-
-
-&MT LCTRL      &MT 	LALT       &MT LGUI 	   &tdxz        &kp SPACE      &kp SPACE        &kp SPACE     &kp SPACE    &kp SPACE     &td,[        &td.]        &kp FSLH
+&tdTABE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9       &kp N0        &kp DEL
+&kb LSHFT   &kp KP_MINUS   &kp KP_PLUS   &kp LEFT   &kp DOWN    &kp SPACE   &kp SPACE   &kp UP      &kp RIGHT   &tdLGRAVE    &tdSEMIAPOS   &kp RETURN	
+&MT LCTRL   &MT LALT       &MT LGUI 	   &tdxz      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCOMALBKT  &tdDOTRBKT    &kp FSLH
 
     >;
   };
