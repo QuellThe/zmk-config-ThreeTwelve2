@@ -43,7 +43,7 @@
       label = "Q_N1";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp q>, <&kp N1>;
+      bindings = <&kp Q>, <&kp N1>;
     };
 
     tdwN2: W_N2 {
@@ -51,7 +51,7 @@
       label = "W_N2";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp w>, <&kp N2>;
+      bindings = <&kp W>, <&kp N2>;
     };
 
     tdEN3: E_N3 {
@@ -67,7 +67,7 @@
       label = "R_N4";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp r>, <&kp N4>;
+      bindings = <&kp R>, <&kp N4>;
     };
 
     tdRTN5: T_N5 {
@@ -75,7 +75,7 @@
       label = "T_N5";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp t>, <&kp N5>;
+      bindings = <&kp T>, <&kp N5>;
     };
 
     tdYN6: Y_N6 {
@@ -83,7 +83,7 @@
       label = "Y_N6";
       #binding-cells = <0>;
       apping-term-ms = <200>;
-      bindings = <&kp y>, <&kp N6>;
+      bindings = <&kp Y>, <&kp N6>;
     };
 
     tdUN7: U_N7 {
@@ -91,7 +91,7 @@
       label = "U_N7";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp u>, <&kp N7>;
+      bindings = <&kp U>, <&kp N7>;
     };
 
     tdIN8: I_N8 {
@@ -99,7 +99,7 @@
       label = "I_N8";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp i>, <&kp N8>;
+      bindings = <&kp I>, <&kp N8>;
     };
 
     tdON9: O_N9 {
@@ -107,7 +107,7 @@
       label = "O_N9";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp o>, <&kp N9>;
+      bindings = <&kp O>, <&kp N9>;
     };
 
     tdPN0: P_N0 {
@@ -115,7 +115,7 @@
       label = "P_N0";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp p>, <&kp N0>;
+      bindings = <&kp P>, <&kp N0>;
     };
 
     tdDELBSlH: DEL_BSLASH {
@@ -131,7 +131,7 @@
       label = "A_MINUS";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp a>, <&kp KP_MINUS>;
+      bindings = <&kp A>, <&kp KP_MINUS>;
     };
 
     tdsPLUS: s_PLUS {
@@ -139,7 +139,7 @@
       label = "s_PLUS";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp s>, <&kp KP_PLUS>;
+      bindings = <&kp S>, <&kp KP_PLUS>;
     };
 
     tddLEFT: d_LEFT {
@@ -147,7 +147,7 @@
       label = "d_LEFT";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp d>, <&kp LEFT>;
+      bindings = <&kp D>, <&kp LEFT>;
     };
 
     tdfDOWN: F_DOWN {
@@ -155,7 +155,7 @@
       label = "F_DOWN";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp f>, <&kp DOWN>;
+      bindings = <&kp F>, <&kp DOWN>;
     };
 
     tdgSPACE: g_SPACE {
@@ -163,7 +163,7 @@
       label = "g_SPACE";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp g>, <&kp SPACE>;
+      bindings = <&kp G>, <&kp SPACE>;
     };
 
     tdhSPACE: h_SPACE {
@@ -171,7 +171,7 @@
       label = "h_SPACE";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp h>, <&kp SPACE>;
+      bindings = <&kp H>, <&kp SPACE>;
     };
 
     tdjUP: j_UP {
@@ -179,7 +179,7 @@
       label = "j_UP";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp j>, <&kp UP>;
+      bindings = <&kp J>, <&kp UP>;
     };
 
     tdkRIGHT: k_RIGHT {
@@ -187,7 +187,7 @@
       label = "k_RIGHT";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp k>, <&kp RIGHT>;
+      bindings = <&kp K>, <&kp RIGHT>;
     };
 
     tdlGRAVE: l_GRAVE {
@@ -195,7 +195,7 @@
       label = "l_GRAVE";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp l>, <&kp GRAVE>;
+      bindings = <&kp L>, <&kp GRAVE>;
     };
 
     tdSEMIAPOS: SEMI_APOS {
@@ -219,7 +219,7 @@
       label = "z_x";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp z>, <&kp x>;
+      bindings = <&kp Z>, <&kp X>;
     };
 
     tdcSPACE: c_SPACE {
@@ -227,7 +227,7 @@
       label = "c_SPACE";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp c>, <&kp SPACE>;
+      bindings = <&kp C>, <&kp SPACE>;
     };
 
     tdvSPACE: v_SPACE {
@@ -235,7 +235,7 @@
       label = "v_SPACE";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp z>, <&kp x>;
+      bindings = <&kp V>, <&kp SPACE>;
     };
 
     tdSPACEb: SPACE_b {
@@ -243,7 +243,7 @@
       label = "SPACE_b";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp SPACE>, <&kp b>;
+      bindings = <&kp SPACE>, <&kp B>;
     };
 
     tdnSPACE: n_SPACE {
@@ -251,7 +251,7 @@
       label = "n_SPACE_x";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp n>, <&kp SPACE>;
+      bindings = <&kp N>, <&kp SPACE>;
     };
 
     tdmSPACE: m_SPACE{
@@ -259,7 +259,7 @@
       label = "m_SPACE";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp m>, <&kp SPACE>;
+      bindings = <&kp M>, <&kp SPACE>;
     };
 
     tdCOMALBKT: COMA_LBKT{
