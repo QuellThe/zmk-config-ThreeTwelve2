@@ -31,7 +31,7 @@
       bindings = <&kp>, <&kp>;
     };
 
-    tdTABe: Tab_Esc {
+    tdTabE: Tab_Esc {
       compatible = "zmk,behavior-tap-dance";
       label = "Tab_Esc";
       #binding-cells = <0>;
@@ -39,7 +39,7 @@
       bindings = <&kp TAB>, <&kp ESC>;
     };
 
-    tdqN1: Q_N1 {
+    tdQN1: Q_N1 {
       compatible = "zmk,behavior-tap-dance";
       label = "Q_N1";
       #binding-cells = <0>;
@@ -47,7 +47,7 @@
       bindings = <&kp Q>, <&kp N1>;
     };
 
-    tdwN2: W_N2 {
+    tdWN2: W_N2 {
       compatible = "zmk,behavior-tap-dance";
       label = "W_N2";
       #binding-cells = <0>;
@@ -71,7 +71,7 @@
       bindings = <&kp R>, <&kp N4>;
     };
 
-    tdRTN5: T_N5 {
+    tdTN5: T_N5 {
       compatible = "zmk,behavior-tap-dance";
       label = "T_N5";
       #binding-cells = <0>;
@@ -119,7 +119,7 @@
       bindings = <&kp P>, <&kp N0>;
     };
 
-    tdDELBSlH: DEL_BSLASH {
+    tdDelBslh: DEL_BSLASH {
       compatible = "zmk,behavior-tap-dance";
       label = "DELBSLH";
       #binding-cells = <0>;
@@ -127,7 +127,7 @@
       bindings = <&kp DEL>, <&kp BSLH>;
     };
 
-    tdaMINUS: A_MINUS {
+    tdAMinus: A_MINUS {
       compatible = "zmk,behavior-tap-dance";
       label = "A_MINUS";
       #binding-cells = <0>;
@@ -135,7 +135,7 @@
       bindings = <&kp A>, <&kp KP_MINUS>;
     };
 
-    tdsPLUS: s_PLUS {
+    tdSPlus: s_PLUS {
       compatible = "zmk,behavior-tap-dance";
       label = "s_PLUS";
       #binding-cells = <0>;
@@ -143,7 +143,7 @@
       bindings = <&kp S>, <&kp KP_PLUS>;
     };
 
-    tddLEFT: d_LEFT {
+    tdDLeft: d_LEFT {
       compatible = "zmk,behavior-tap-dance";
       label = "d_LEFT";
       #binding-cells = <0>;
@@ -151,7 +151,7 @@
       bindings = <&kp D>, <&kp LEFT>;
     };
 
-    tdfDOWN: F_DOWN {
+    tdFDown: F_DOWN {
       compatible = "zmk,behavior-tap-dance";
       label = "F_DOWN";
       #binding-cells = <0>;
@@ -159,7 +159,7 @@
       bindings = <&kp F>, <&kp DOWN>;
     };
 
-    tdgSPACE: g_SPACE {
+    tdGSpace: g_SPACE {
       compatible = "zmk,behavior-tap-dance";
       label = "g_SPACE";
       #binding-cells = <0>;
@@ -167,7 +167,7 @@
       bindings = <&kp G>, <&kp SPACE>;
     };
 
-    tdhSPACE: h_SPACE {
+    tdHSpace: h_SPACE {
       compatible = "zmk,behavior-tap-dance";
       label = "h_SPACE";
       #binding-cells = <0>;
@@ -175,7 +175,7 @@
       bindings = <&kp H>, <&kp SPACE>;
     };
 
-    tdjUP: j_UP {
+    tdJUp: j_UP {
       compatible = "zmk,behavior-tap-dance";
       label = "j_UP";
       #binding-cells = <0>;
@@ -183,7 +183,7 @@
       bindings = <&kp J>, <&kp UP>;
     };
 
-    tdkRIGHT: k_RIGHT {
+    tdKRight: k_RIGHT {
       compatible = "zmk,behavior-tap-dance";
       label = "k_RIGHT";
       #binding-cells = <0>;
@@ -191,7 +191,7 @@
       bindings = <&kp K>, <&kp RIGHT>;
     };
 
-    tdlGRAVE: l_GRAVE {
+    tdLGrave: l_GRAVE {
       compatible = "zmk,behavior-tap-dance";
       label = "l_GRAVE";
       #binding-cells = <0>;
@@ -199,7 +199,7 @@
       bindings = <&kp L>, <&kp GRAVE>;
     };
 
-    tdSEMIAPOS: SEMI_APOS {
+    tdSemiApos: SEMI_APOS {
       compatible = "zmk,behavior-tap-dance";
       label = "SEMI_QUO";
       #binding-cells = <0>;
@@ -207,7 +207,7 @@
       bindings = <&kp SEMI>, <&kp APOS>;
     };
 
-    tdRSHFRET: RSHIFT_RET {
+    tdRshiftRet: RSHIFT_RET {
       compatible = "zmk,behavior-tap-dance";
       label = "RSHIFT_RET";
       #binding-cells = <0>;
@@ -215,7 +215,7 @@
       bindings = <&kp RSHIFT>, <&kp RET>;
     };
 
-    tdzx: z_x {
+    tdZX: z_x {
       compatible = "zmk,behavior-tap-dance";
       label = "z_x";
       #binding-cells = <0>;
@@ -223,7 +223,7 @@
       bindings = <&kp Z>, <&kp X>;
     };
 
-    tdcSPACE: c_SPACE {
+    tdCSpace: c_SPACE {
       compatible = "zmk,behavior-tap-dance";
       label = "c_SPACE";
       #binding-cells = <0>;
@@ -231,7 +231,7 @@
       bindings = <&kp C>, <&kp SPACE>;
     };
 
-    tdvSPACE: v_SPACE {
+    tdVSpace: v_SPACE {
       compatible = "zmk,behavior-tap-dance";
       label = "v_SPACE";
       #binding-cells = <0>;
@@ -239,7 +239,7 @@
       bindings = <&kp V>, <&kp SPACE>;
     };
 
-    tdSPACEb: SPACE_b {
+    tdSpaceB: SPACE_b {
       compatible = "zmk,behavior-tap-dance";
       label = "SPACE_b";
       #binding-cells = <0>;
@@ -247,15 +247,15 @@
       bindings = <&kp SPACE>, <&kp B>;
     };
 
-    tdnSPACE: n_SPACE {
+    tdNSpace: n_SPACE {
       compatible = "zmk,behavior-tap-dance";
-      label = "n_SPACE_x";
+      label = "n_SPACE";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp N>, <&kp SPACE>;
     };
 
-    tdmSPACE: m_SPACE{
+    tdMSpace: m_SPACE{
       compatible = "zmk,behavior-tap-dance";
       label = "m_SPACE";
       #binding-cells = <0>;
@@ -263,7 +263,7 @@
       bindings = <&kp M>, <&kp SPACE>;
     };
 
-    tdCOMALBKT: COMA_LBKT{
+    tdCommaLbkt: COMA_LBKT{
       compatible = "zmk,behavior-tap-dance";
       label = "COMA_LBKT";
       #binding-cells = <0>;
@@ -271,7 +271,7 @@
       bindings = <&kp COMMA>, <&kp LBKT>;
     };
 
-    tdDOTRBKT: DOT_RBKT {
+    tdDotBrkt: DOT_RBKT {
       compatible = "zmk,behavior-tap-dance";
       label = "DOT_RBKT";
       #binding-cells = <0>;
@@ -453,9 +453,9 @@ keymap {
   default_layer {
     bindings = <
 
-&tdTABe     &tdqN1       &tdwN2         &tdeN3      &tdrN4      &tdtN5       &tdyN6       &tduN7      &tdiN8      &tdoN9       &tdpN0        &tdDELBSLH
-&kb LSHFT   &tdaMINUS    &tdsKP_PLUS    &tddLEFT    &tdfDOWN    &tdgSPACE    &kphSPACE    &tdjUP      &tdkRIGHT   &tdlGRAVE    &tdSEMIAPOS   &tdRSHFTRET
-&MT LCTRL   &MT LALT     &MT LGUI 	    &tdxz       &tdcSPACE   &tdvSPACE    &tdSPACEb    &tdnSPACE   &tdmSPACE   &tdCOMALBKT  &tdDOTRBKT    &kp FSLH
+&tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
+&kb LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &tdFDown    &tdGSpace    &tdHSpace    &tdJUp      &tdKRight   &tdLGrave    &tdSemiApos   &tdRshiftRet
+&MT LCTRL   &MT LALT     &MT LGUI    &tdZX       &tdCSpace   &tdVSpace    &tdSpaceB    &tdNSpace   &tdMSpace   &tdCommaLbkt  &tdDotBrkt    &kp FSLH
 
             >;
         };	
@@ -463,9 +463,9 @@ keymap {
   Num_layer {
     bindings = <
 
-&tdTABe     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9       &kp N0        &kp DEL
-&kb LSHFT   &kp KP_MINUS   &kp KP_PLUS   &kp LEFT   &kp DOWN    &kp SPACE   &kp SPACE   &kp UP      &kp RIGHT   &tdLGRAVE    &tdSEMIAPOS   &kp RETURN	
-&MT LCTRL   &MT LALT       &MT LGUI 	   &tdxz      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCOMALBKT  &tdDOTRBKT    &kp BSLH 
+&tdTabe     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9        &kp N0        &kp DEL
+&kb LSHFT   &kp KP_MINUS   &kp KP_PLUS   &kp LEFT   &kp DOWN    &kp SPACE   &kp SPACE   &kp UP      &kp RIGHT   &tdLGrave     &tdSemiApos   &kp RETURN	
+&MT LCTRL   &MT LALT       &MT LGUI 	   &tdZX      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp BSLH 
 
     >;
   };
