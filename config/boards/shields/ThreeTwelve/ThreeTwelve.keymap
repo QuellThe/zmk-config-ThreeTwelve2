@@ -13,7 +13,7 @@
 #define NUM     1
 
 
-};
+
 
 / {
     combos {
@@ -184,7 +184,7 @@
             key-positions = <29 30>;
             bindings = <&kp SPACE>;
         };
-combos {
+        combos {
         compatible = "zmk,combos";
         combo_voldn {
             timeout-ms = <50>;
