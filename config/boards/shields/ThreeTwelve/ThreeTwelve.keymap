@@ -83,7 +83,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "Y_N6";
       #binding-cells = <0>;
-      apping-term-ms = <200>;
+      tapping-term-ms = <200>;
       bindings = <&kp Y>, <&kp N6>;
     };
 
