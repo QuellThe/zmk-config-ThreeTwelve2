@@ -31,7 +31,7 @@
       bindings = <&kp>, <&kp>;
     };
 
-    tdTabE: Tab_Esc {
+    tdTABe: Tab_Esc {
       compatible = "zmk,behavior-tap-dance";
       label = "Tab_Esc";
       #binding-cells = <0>;
@@ -453,7 +453,7 @@ keymap {
   default_layer {
     bindings = <
 
-&tdTABE     &tdqN1       &tdwN2         &tdeN3      &tdrN4      &tdtN5       &tdyN6       &tduN7      &tdiN8      &tdoN9       &tdpN0        &tdDELBSLH
+&tdTABe     &tdqN1       &tdwN2         &tdeN3      &tdrN4      &tdtN5       &tdyN6       &tduN7      &tdiN8      &tdoN9       &tdpN0        &tdDELBSLH
 &kb LSHFT   &tdaMINUS    &tdsKP_PLUS    &tddLEFT    &tdfDOWN    &tdgSPACE    &kphSPACE    &tdjUP      &tdkRIGHT   &tdlGRAVE    &tdSEMIAPOS   &tdRSHFTRET
 &MT LCTRL   &MT LALT     &MT LGUI 	    &tdxz       &tdcSPACE   &tdvSPACE    &tdSPACEb    &tdnSPACE   &tdmSPACE   &tdCOMALBKT  &tdDOTRBKT    &kp FSLH
 
@@ -463,7 +463,7 @@ keymap {
   Num_layer {
     bindings = <
 
-&tdTABE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9       &kp N0        &kp DEL
+&tdTABe     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9       &kp N0        &kp DEL
 &kb LSHFT   &kp KP_MINUS   &kp KP_PLUS   &kp LEFT   &kp DOWN    &kp SPACE   &kp SPACE   &kp UP      &kp RIGHT   &tdLGRAVE    &tdSEMIAPOS   &kp RETURN	
 &MT LCTRL   &MT LALT       &MT LGUI 	   &tdxz      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCOMALBKT  &tdDOTRBKT    &kp BSLH 
 
