@@ -13,14 +13,200 @@
 #define NUM     1
 
 
-#define COMBO(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    timeout-ms = <50>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <0 1>; \
-  };
+};
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_fnone {
+            timeout-ms = <50>;
+            key-positions = <1 11>;
+            bindings = <&kp FN1>;
+        };
+       combos {
+        compatible = "zmk,combos";
+        combo_fntwo {
+            timeout-ms = <50>;
+            key-positions = <2 11>;
+            bindings = <&kp FN2>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_fnthree {
+            timeout-ms = <50>;
+            key-positions = <3 11>;
+            bindings = <&kp FN3>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_ffour {
+            timeout-ms = <50>;
+            key-positions = <4 11>;
+            bindings = <&kp FN4>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_ffive {
+            timeout-ms = <50>;
+            key-positions = <5 11>;
+            bindings = <&kp FN5>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_fsix {
+            timeout-ms = <50>;
+            key-positions = <0 6>;
+            bindings = <&kp FN6>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_fnseven {
+            timeout-ms = <50>;
+            key-positions = <0 7>;
+            bindings = <&kp FN7>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_fneight {
+            timeout-ms = <50>;
+            key-positions = <0 8>;
+            bindings = <&kp FN8>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_fnnine {
+            timeout-ms = <50>;
+            key-positions = <0 9>;
+            bindings = <&kp FN9>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_fn10 {
+            timeout-ms = <50>;
+            key-positions = <0 10>;
+            bindings = <&kp FN10>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_fneleven {
+            timeout-ms = <50>;
+            key-positions = <0 11>;
+            bindings = <&kp FN11>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_btzero{
+            timeout-ms = <50>;
+            key-positions = <0 11 24 35>;
+            bindings = <&bt BT_SEL 0>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_btone {
+            timeout-ms = <50>;
+            key-positions = <1 10 25 34>;
+            bindings = <&bt BT_SEL 1>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_bttwo{
+            timeout-ms = <50>;
+            key-positions = <2 9 26 33>;
+            bindings = <&bt BT_SEL 2>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_btthree {
+            timeout-ms = <50>;
+            key-positions = <3 27 8 32>;
+            bindings = <&bt BT_SEL 3>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_btfour {
+            timeout-ms = <50>;
+            key-positions = <4 28 7  31>;
+            bindings = <&bt BT_SEL 4>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_btclr {
+            timeout-ms = <50>;
+            key-positions = <5 6 29 30>;
+            bindings = <&bt BT_CLR>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_btout{
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&out OUT_TOG>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_briup {
+            timeout-ms = <50>;
+            key-positions = <16 19 20>;
+            bindings = <&kp C_BRI_UP>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_bridn{
+            timeout-ms = <50>;
+            key-positions = <15 19 20>;
+            bindings = <&kp C_BRI_DN>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_volup {
+            timeout-ms = <50>;
+            key-positions = <15 16 20>;
+            bindings = <&kp C_VOL_UP>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_mut {
+            timeout-ms = <50>;
+            key-positions = <16 17 18 19>;
+            bindings = <&kp C_MUTE>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_cpswrd {
+            timeout-ms = <50>;
+            key-positions = <12 23>;
+            bindings = <&caps_word>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_spce {
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&kp SPACE>;
+        };
+combos {
+        compatible = "zmk,combos";
+        combo_voldn {
+            timeout-ms = <50>;
+            key-positions = <15 16 19>;
+            bindings = <&kp C_VOL_DN>;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_dfltlyr{
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&to 0 >;
+        };
+        combos {
+        compatible = "zmk,combos";
+        combo_numlyr{
+            timeout-ms = <50>;
+            key-positions = <34 35>;
+            bindings = <&to 1>;
+        };
+    };
+};
 / {
   behaviors {
     hm: homerow_mods {
@@ -34,37 +220,7 @@
     };
 };
 
-combos {
-    compatible = "zmk,combos";
-                      
-    COMBO(fone, &kp FN1, 11 1)
-    COMBO(ftwo, &kp FN2, 11 2)
-    COMBO(fthree, &kp FN3, 11 3)
-    COMBO(ffour, &kp FN4, 11 4)
-    COMBO(ffive, &kp FN5, 11 5)
-    COMBO(fsix, &kp FN6, 0 6)
-    COMBO(fseven, &kp FN7, 0 7)
-    COMBO(feight, &kp FN8, 0 8)
-    COMBO(fnine, &kp FN9, 0 9)
-    COMBO(fnten, &kp FN10, 0 10)
-    COMBO(fneleven, &kp FN11, 0 11)
-    COMBO(btzero, &bt BT_SEL 0, 0 11 24 35)
-    COMBO(btone, &bt BT_SEL 1, 1 10 25 34)
-    COMBO(bttwo, &bt BT_SEL 2, 2 9 26 33)
-    COMBO(btthree, &bt BT_SEL 3, 3 8 27 32)
-    COMBO(btfour, &bt BT_SEL 4, 4 7 28 31)
-    COMBO(clrbt, &bt BT_CLR, 5 6 29 30)
-    COMBO(usbtog, &out OUT_TOG, 18 19)
-    COMBO(scrnup, &kp C_BRI_UP, 16 19 20)
-    COMBO(scrndn, &kp C_BRI_DN, 15 19 20)
-    COMBO(volup, &kp C_VOL_UP, 15 16 20)
-    COMBO(voldn, &kp C_VOL_DN, 15 16 19)
-    COMBO(mut, &kp C_MUTE, 16 17 18 19)
-    COMBO(capsword, &caps_word, 12 23)
-    CONBO(spacebr, &kp space, 29 30)
-    COMBO(defltlyer, &to 0, 22 23)
-    COMBO(numlyer, &to 1, 34 35)
-  };
+/{
 
     tdTabE: Tab_Esc {
       compatible = "zmk,behavior-tap-dance";
