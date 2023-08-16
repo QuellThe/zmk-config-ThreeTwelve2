@@ -33,6 +33,7 @@
 
     tdTabE: Tab_Esc {
       compatible = "zmk,behavior-tap-dance";
+      label = "tabe";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp TAB>, <&kp ESC>;
@@ -40,6 +41,7 @@
 
     tdQN1: Q_N1 {
       compatible = "zmk,behavior-tap-dance";
+      label = "qn1";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp Q>, <&kp N1>;
@@ -47,6 +49,7 @@
 
     tdWN2: W_N2 {
       compatible = "zmk,behavior-tap-dance";
+      label = "wn2";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp W>, <&kp N2>;
@@ -54,6 +57,7 @@
 
     tdEN3: E_N3 {
       compatible = "zmk,behavior-tap-dance";
+      label = "en3";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp E>, <&kp N3>;
@@ -61,6 +65,7 @@
 
     tdRN4: R_N4 {
       compatible = "zmk,behavior-tap-dance";
+      label = "rn4";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp R>, <&kp N4>;
@@ -68,6 +73,7 @@
 
     tdTN5: T_N5 {
       compatible = "zmk,behavior-tap-dance";
+      label = "tn5";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp T>, <&kp N5>;
@@ -75,6 +81,7 @@
 
     tdYN6: Y_N6 {
       compatible = "zmk,behavior-tap-dance";
+      label = "yn6";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp Y>, <&kp N6>;
@@ -82,6 +89,7 @@
 
     tdUN7: U_N7 {
       compatible = "zmk,behavior-tap-dance";
+      label = "un7";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp U>, <&kp N7>;
@@ -89,6 +97,7 @@
 
     tdIN8: I_N8 {
       compatible = "zmk,behavior-tap-dance";
+      label = "in8";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp I>, <&kp N8>;
@@ -96,6 +105,7 @@
 
     tdON9: O_N9 {
       compatible = "zmk,behavior-tap-dance";
+      label = "on9";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp O>, <&kp N9>;
@@ -103,6 +113,7 @@
 
     tdPN0: P_N0 {
       compatible = "zmk,behavior-tap-dance";
+      label = "pn0";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp P>, <&kp N0>;
@@ -110,6 +121,7 @@
 
     tdDelBslh: DEL_BSLASH {
       compatible = "zmk,behavior-tap-dance";
+      label = "delbslh";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp DEL>, <&kp BSLH>;
@@ -117,6 +129,7 @@
 
     tdAMinus: A_MINUS {
       compatible = "zmk,behavior-tap-dance";
+      label = "aminus";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp A>, <&kp KP_MINUS>;
@@ -124,6 +137,7 @@
 
     tdSPlus: s_PLUS {
       compatible = "zmk,behavior-tap-dance";
+      label = "splus";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp S>, <&kp KP_PLUS>;
@@ -131,6 +145,7 @@
 
     tdDLeft: d_LEFT {
       compatible = "zmk,behavior-tap-dance";
+      label = "dleft";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp D>, <&kp LEFT>;
@@ -138,6 +153,7 @@
 
     tdFDown: F_DOWN {
       compatible = "zmk,behavior-tap-dance";
+      label = "fdown";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp F>, <&kp DOWN>;
@@ -145,6 +161,7 @@
 
     tdGSpace: g_SPACE {
       compatible = "zmk,behavior-tap-dance";
+      label = "gspace";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp G>, <&kp SPACE>;
@@ -152,6 +169,7 @@
 
     tdHSpace: h_SPACE {
       compatible = "zmk,behavior-tap-dance";
+      label = "hspace";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp H>, <&kp SPACE>;
@@ -159,6 +177,7 @@
 
     tdJUp: j_UP {
       compatible = "zmk,behavior-tap-dance";
+      label = "jup";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp J>, <&kp UP>;
@@ -166,6 +185,7 @@
 
     tdKRight: k_RIGHT {
       compatible = "zmk,behavior-tap-dance";
+      label = "kright";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp K>, <&kp RIGHT>;
@@ -173,6 +193,7 @@
 
     tdLGrave: l_GRAVE {
       compatible = "zmk,behavior-tap-dance";
+      label = "lgrave";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp L>, <&kp GRAVE>;
@@ -180,6 +201,7 @@
 
     tdSemiApos: SEMI_APOS {
       compatible = "zmk,behavior-tap-dance";
+      label = "semiapos";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp SEMI>, <&kp APOS>;
@@ -187,6 +209,7 @@
 
     tdRshiftRet: RSHIFT_RET {
       compatible = "zmk,behavior-tap-dance";
+      label = "rshiftret";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp RSHIFT>, <&kp RET>;
@@ -194,6 +217,7 @@
 
     tdZX: z_x {
       compatible = "zmk,behavior-tap-dance";
+      label = "zx";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp Z>, <&kp X>;
@@ -201,6 +225,7 @@
 
     tdCSpace: c_SPACE {
       compatible = "zmk,behavior-tap-dance";
+      label = "cspave";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp C>, <&kp SPACE>;
@@ -208,6 +233,7 @@
 
     tdVSpace: v_SPACE {
       compatible = "zmk,behavior-tap-dance";
+      label = "bspace";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp V>, <&kp SPACE>;
@@ -215,6 +241,7 @@
 
     tdSpaceB: SPACE_b {
       compatible = "zmk,behavior-tap-dance";
+      label = "spaceb";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp SPACE>, <&kp B>;
@@ -222,6 +249,7 @@
 
     tdNSpace: n_SPACE {
       compatible = "zmk,behavior-tap-dance";
+      label = "nspace";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp N>, <&kp SPACE>;
@@ -229,13 +257,15 @@
 
     tdMSpace: m_SPACE{
       compatible = "zmk,behavior-tap-dance";
+      label = "mspace";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp M>, <&kp SPACE>;
     };
 
-    tdCommaLbkt: COMA_LBKT{
+    tdCommaLbkt: COMMA_LBKT{
       compatible = "zmk,behavior-tap-dance";
+      label = "commalbkt";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp COMMA>, <&kp LBKT>;
@@ -243,6 +273,7 @@
 
     tdDotBrkt: DOT_RBKT {
       compatible = "zmk,behavior-tap-dance";
+      label = "dotbrkt";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp DOT>, <&kp RBKT>;
