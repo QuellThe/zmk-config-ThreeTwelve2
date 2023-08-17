@@ -455,7 +455,7 @@ keymap {
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
 &kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &tdFDown    &tdGSpace    &tdHSpace    &tdJUp      &tdKRight   &tdLGrave    &tdSemiApos   &tdRshiftRet
-&mt LCTRL   &mt LEFT_ALT     &mt LGUI    &tdZX       &tdCSpace   &tdVSpace    &tdSpaceB    &tdNSpace   &tdMSpace   &tdCommaLbkt  &tdDotBrkt    &kp FSLH
+&kp LCTRL   &kp LALT     &kp LGUI    &tdZX       &tdCSpace   &tdVSpace    &tdSpaceB    &tdNSpace   &tdMSpace   &tdCommaLbkt  &tdDotBrkt    &kp FSLH
 
             >;
         };	
@@ -465,7 +465,7 @@ keymap {
 
 &tdTabE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9        &kp N0        &kp DEL
 &kp LSHFT   &kp KP_MINUS   &kp KP_PLUS   &kp LEFT   &kp DOWN    &kp SPACE   &kp SPACE   &kp UP      &kp RIGHT   &tdLGrave     &tdSemiApos   &kp RETURN	
-&mt LCTRL   &mt LEFT_ALT       &mt LGUI 	   &tdZX      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp BSLH 
+&kp LCTRL   &kp LALT       &kp LGUI 	   &tdZX      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp BSLH 
 
     >;
   };
