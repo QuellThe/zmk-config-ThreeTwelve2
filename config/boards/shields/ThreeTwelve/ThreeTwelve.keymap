@@ -147,7 +147,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "dleft";
       #binding-cells = <0>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <250>;
       bindings = <&kp D>, <&kp LEFT>;
     };
 
