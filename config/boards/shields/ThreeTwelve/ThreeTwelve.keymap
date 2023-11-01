@@ -124,7 +124,7 @@
       label = "delbslh";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp DEL>, <&kp BSLH>;
+      bindings = <&kp BSPC>, <&kp DEL>, <&kp BSLH>;
     };
 
     tdAMinus: A_MINUS {
@@ -215,12 +215,12 @@
       bindings = <&kp RSHIFT>, <&kp RET>;
     };
 
-    tdZX: z_x {
+    tdCZX: z_x {
       compatible = "zmk,behavior-tap-dance";
-      label = "zx";
+      label = "czx";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp Z>, <&kp X>;
+      bindings = <&kp C>,<&kp Z>, <&kp X>;
     };
 
     tdCSpace: c_SPACE {
@@ -461,7 +461,7 @@ keymap {
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
 &kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &tdFDown    &tdGSpace    &tdHSpace    &tdJUp      &tdKRight   &tdLGrave    &tdSemiApos   &tdRshiftRet
-&kp LCTRL   &kp LALT     &kp LGUI    &tdZX       &tdCSpace   &tdVSpace    &tdSpaceB    &tdNSpace   &tdMSpace   &tdCommaLbkt  &tdDotBrkt    &kp FSLH
+&kp LCTRL   &kp LALT     &kp LGUI    &tdCZX   &tdVSpace    &tdSpaceB    &tdNSpace   &tdMSpace   &tdCommaLbkt  &tdDotBrkt    &kp FSLH &kpRET
 
             >;
         };	
