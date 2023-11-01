@@ -329,7 +329,7 @@
    };
       
    
-   combo_fn10 {
+   combo_fnten {
      timeout-ms = <50>;
      key-positions = <0 10>;
      bindings = <&kp F10>;
