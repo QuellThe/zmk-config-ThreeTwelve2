@@ -220,15 +220,7 @@
       label = "cxz";
       #binding-cells = <0>;
       tapping-term-ms = <300>;
-      bindings = <&kp C>,<&kp X>, <&kp Z>;
-    };
-
-    tdCSpace: c_SPACE {
-      compatible = "zmk,behavior-tap-dance";
-      label = "cspace";
-      #binding-cells = <0>;
-      tapping-term-ms = <250>;
-      bindings = <&kp C>, <&kp SPACE>;
+      bindings = <&kp C>, <&kp X>, <&kp Z>;
     };
 
     tdVSpace: v_SPACE {
@@ -286,14 +278,8 @@
      timeout-ms = <50>;
      key-positions = <1 11>;
      bindings = <&kp F1>;
-
    };
-   combo_fnone {
-     timeout-ms = <50>;
-     key-positions = <1 11>;
-     bindings = <&kp F1>;
-   };
-     
+      
    combo_fntwo {
      timeout-ms = <50>;
      key-positions = <2 11>;
@@ -461,7 +447,7 @@ keymap {
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
 &kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &tdFDown    &tdGSpace    &tdHSpace    &tdJUp      &tdKRight   &tdLGrave    &tdSemiApos   &tdRshiftRet
-&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &tdVSpace    &tdSpaceB    &tdNSpace   &tdMSpace   &tdCommaLbkt  &tdDotBrkt    &kp FSLH &kpRET
+&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &tdVSpace    &tdSpaceB    &tdNSpace   &tdMSpace   &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &kpRET
 
             >;
         };	
