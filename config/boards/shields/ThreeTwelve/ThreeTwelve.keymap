@@ -151,36 +151,36 @@
       bindings = <&kp D>, <&kp LEFT>;
     };
 
-    tdFDown: F_DOWN {
+    tdFDown: F_SPACE {
       compatible = "zmk,behavior-tap-dance";
-      label = "fdown";
+      label = "fspace";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp F>, <&kp DOWN>;
+      bindings = <&kp F>, <&kp SPACE>;
     };
 
-    tdGSpace: g_SPACE {
+    tdGSpace: g_DOWN {
       compatible = "zmk,behavior-tap-dance";
-      label = "gspace";
+      label = "gdown";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp G>, <&kp SPACE>;
+      bindings = <&kp G>, <&kp DOWN>;
     };
 
-    tdHSpace: h_SPACE {
+    tdHSpace: h_UP {
       compatible = "zmk,behavior-tap-dance";
-      label = "hspace";
+      label = "hup";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp H>, <&kp SPACE>;
+      bindings = <&kp H>, <&kp UP>;
     };
 
-    tdJUp: j_UP {
+    tdJUp: j_SPACE {
       compatible = "zmk,behavior-tap-dance";
-      label = "jup";
+      label = "jspace";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp J>, <&kp UP>;
+      bindings = <&kp J>, <&kp SPACE>;
     };
 
     tdKRight: k_RIGHT {
