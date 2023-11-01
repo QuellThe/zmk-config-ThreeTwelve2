@@ -217,7 +217,7 @@
 
     tdCXZ: z_x {
       compatible = "zmk,behavior-tap-dance";
-      label = "czx";
+      label = "cxz";
       #binding-cells = <0>;
       tapping-term-ms = <300>;
       bindings = <&kp C>,<&kp X>, <&kp Z>;
