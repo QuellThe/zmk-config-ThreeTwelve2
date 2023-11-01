@@ -25,7 +25,7 @@
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS";
       #binding-cells = <2>;
-      tapping-term-ms = <250>;
+      tapping-term-ms = <300>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
@@ -59,7 +59,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "en3";
       #binding-cells = <0>;
-      tapping-term-ms = <250>;
+      tapping-term-ms = <300>;
       bindings = <&kp E>, <&kp N3>;
     };
 
@@ -123,7 +123,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "delbslh";
       #binding-cells = <0>;
-      tapping-term-ms = <250>;
+      tapping-term-ms = <300>;
       bindings = <&kp BSPC>, <&kp DEL>, <&kp BSLH>;
     };
 
@@ -219,7 +219,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "czx";
       #binding-cells = <0>;
-      tapping-term-ms = <250>;
+      tapping-term-ms = <300>;
       bindings = <&kp C>,<&kp X>, <&kp Z>;
     };
 
