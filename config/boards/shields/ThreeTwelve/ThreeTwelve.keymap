@@ -132,7 +132,7 @@
       label = "aminus";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp A>, <&kp KP_MINUS>;
+      bindings = <&kp A>, <&kp MINUS>;
     };
 
     tdSPlus: s_PLUS {
@@ -140,7 +140,7 @@
       label = "splus";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp S>, <&kp KP_PLUS>;
+      bindings = <&kp S>, <&kp EQUAL>;
     };
 
     tdDLeft: d_LEFT {
