@@ -151,7 +151,7 @@
       bindings = <&kp D>, <&kp LEFT>;
     };
 
-    tdFDown: F_SPACE {
+    tdFSpace: F_SPACE {
       compatible = "zmk,behavior-tap-dance";
       label = "fspace";
       #binding-cells = <0>;
@@ -159,7 +159,7 @@
       bindings = <&kp F>, <&kp SPACE>;
     };
 
-    tdGSpace: g_DOWN {
+    tdGDown: g_DOWN {
       compatible = "zmk,behavior-tap-dance";
       label = "gdown";
       #binding-cells = <0>;
@@ -167,7 +167,7 @@
       bindings = <&kp G>, <&kp DOWN>;
     };
 
-    tdHSpace: h_UP {
+    tdHUp: h_UP {
       compatible = "zmk,behavior-tap-dance";
       label = "hup";
       #binding-cells = <0>;
@@ -175,7 +175,7 @@
       bindings = <&kp H>, <&kp UP>;
     };
 
-    tdJUp: j_SPACE {
+    tdJSpace: j_SPACE {
       compatible = "zmk,behavior-tap-dance";
       label = "jspace";
       #binding-cells = <0>;
@@ -446,7 +446,7 @@ keymap {
     bindings = <
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
-&kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &tdFDown    &tdGSpace    &tdHSpace    &tdJUp      &tdKRight   &tdLGrave    &tdSemiApos   &tdRshiftRet
+&kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F    &tdGDown    &tdHUp    &mt Space F      &tdKRight   &tdLGrave    &tdSemiApos   &tdRshiftRet
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &kp RET
 
             >;
@@ -456,7 +456,7 @@ keymap {
     bindings = <
 
 &tdTabE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9        &kp N0        &kp DEL
-&kp LSHFT   &kp MINUS   &kp EQUAL   &kp LEFT   &kp DOWN    &kp SPACE   &kp SPACE   &kp UP      &kp RIGHT   &tdLGrave     &tdSemiApos   &kp RETURN	
+&kp LSHFT   &kp MINUS     &kp EQUAL    &kp LEFT    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp RIGHT   &tdLGrave     &tdSemiApos   &kp RETURN	
 &kp LCTRL   &kp LALT       &kp LGUI 	   &tdCXZ      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp FSLH 
 
     >;
