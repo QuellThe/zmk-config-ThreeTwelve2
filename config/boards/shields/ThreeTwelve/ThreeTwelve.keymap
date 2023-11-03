@@ -447,7 +447,7 @@ keymap {
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
 &kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &tdFDown    &tdGSpace    &tdHSpace    &tdJUp      &tdKRight   &tdLGrave    &tdSemiApos   &tdRshiftRet
-&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &ht_tp SPACE V  &ht_tp SPACE B &ht_tp SPACE N  &ht_tp SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &kp RET
+&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mtSPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &kp RET
 
             >;
         };	
