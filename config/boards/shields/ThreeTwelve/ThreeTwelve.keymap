@@ -191,20 +191,20 @@
       bindings = <&kp K>, <&kp RIGHT>;
     };
 
-    tdLGrave: l_GRAVE {
+    tdLSemi: l_SEMI {
       compatible = "zmk,behavior-tap-dance";
-      label = "lgrave";
+      label = "lsemi";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp L>, <&kp GRAVE>;
+      bindings = <&kp L>, <&kp SEMI>;
     };
 
-    tdSemiApos: SEMI_APOS {
+    tdAposGrave: APOS_GRAVE {
       compatible = "zmk,behavior-tap-dance";
       label = "semiapos";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp SEMI>, <&kp APOS>;
+      bindings = <&kp APOS>, <&kp GRAVE>;
     };
 
     tdRshiftRet: RSHIFT_RET {
@@ -446,7 +446,7 @@ keymap {
     bindings = <
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
-&kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F  &tdGDown    &tdHUp    &mt J SPACE  &tdKRight   &tdLGrave    &tdSemiApos   &tdRshiftRet
+&kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F  &tdGDown    &tdHUp    &mt J SPACE  &tdKRight   &tdLSemi    &tdAposGrave   &tdRshiftRet
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &kp RET
 
             >;
@@ -456,7 +456,7 @@ keymap {
     bindings = <
 
 &tdTabE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9        &kp N0        &kp DEL
-&kp LSHFT   &kp MINUS     &kp EQUAL    &kp LEFT    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp RIGHT   &tdLGrave     &tdSemiApos   &kp RETURN	
+&kp LSHFT   &kp MINUS     &kp EQUAL    &kp LEFT    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp RIGHT   &tdLSemi     &tdAposGrave   &kp RETURN	
 &kp LCTRL   &kp LALT       &kp LGUI 	   &tdCXZ      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp FSLH 
 
     >;
