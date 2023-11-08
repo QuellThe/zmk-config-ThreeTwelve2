@@ -410,7 +410,7 @@
   combo_cpswrd {
       timeout-ms = <50>;
       key-positions = <12 23>;
-      bindings = <&caps_word>;
+      bindings = <&kp CAPS>;
     };
       
   combo_space {
@@ -447,7 +447,7 @@ keymap {
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
 &kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F  &tdGDown    &tdHUp    &mt J SPACE  &tdKRight   &tdLSemi    &tdAposGrave   &kp RET
-&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &Mt DOWN FSLH   &Mt RIGHT RSHFT
+&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &Mt DOWN FSLH   &mt RIGHT RSHFT
 
             >;
         };	
