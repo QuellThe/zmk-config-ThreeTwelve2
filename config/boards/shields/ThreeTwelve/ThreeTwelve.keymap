@@ -204,7 +204,7 @@
       label = "semiapos";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp APOS>, <&kp GRAVE>;
+      bindings = <&Mt UP APOS>, <&kp GRAVE>;
     };
 
     tdRshiftRet: RSHIFT_RET {
@@ -268,7 +268,7 @@
       label = "dotbrkt";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp DOT>, <&kp RBKT>;
+      bindings = <&mt LEFT DOT>, <&kp RBKT>;
     };
  };
 
@@ -403,7 +403,7 @@
       
   combo_mut {
       timeout-ms = <50>;
-      key-positions = <9 ¹0 11>;
+      key-positions = <9 10 11>;
       bindings = <&kp C_MUTE>;
     };
       
@@ -447,7 +447,7 @@ keymap {
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
 &kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F  &tdGDown    &tdHUp    &mt J SPACE  &tdKRight   &tdLSemi    &tdAposGrave   &kp RET
-&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &kp RSHFT
+&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &Mt DOWN FSLH   &Mt RIGHT RSHFT
 
             >;
         };	
