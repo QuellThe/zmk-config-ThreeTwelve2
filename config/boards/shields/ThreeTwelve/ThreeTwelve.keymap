@@ -61,7 +61,6 @@
       label = "en3";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      quick-tap-ms = <80>;
       bindings = <&kp E>, <&kp N3>;
     };
 
