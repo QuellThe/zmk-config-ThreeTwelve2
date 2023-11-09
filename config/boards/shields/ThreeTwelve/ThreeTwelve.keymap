@@ -96,7 +96,7 @@
       bindings = <&kp U>, <&kp N7>;
     };
 
-    tdIN8: I_N8 {
+    tdUpIN8: I_N8 {
       compatible = "zmk,behavior-tap-dance";
       label = "in8";
       #binding-cells = <0>;
@@ -176,7 +176,7 @@
       bindings = <&kp H>, <&kp UP>;
     };
 
-    tdJSpace: j_SPACE {
+    tdLeftJSpace: j_SPACE {
       compatible = "zmk,behavior-tap-dance";
       label = "jspace";
       #binding-cells = <0>;
@@ -184,7 +184,7 @@
       bindings = <&mt LEFT SPACE>, <&kp J>;
     };
 
-    tdKRight: k_RIGHT {
+    tdDownKRight: k_RIGHT {
       compatible = "zmk,behavior-tap-dance";
       label = "kright";
       #binding-cells = <0>;
@@ -192,7 +192,7 @@
       bindings = <&mt DOWN K>, <&kp RIGHT>;
     };
 
-    tdLSemi: l_SEMI {
+    tdRightLSemi: l_SEMI {
       compatible = "zmk,behavior-tap-dance";
       label = "lsemi";
       #binding-cells = <0>;
@@ -446,8 +446,8 @@ keymap {
   default_layer {
     bindings = <
 
-&tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdON9       &tdPN0        &tdDelBslh
-&kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F  &tdGDown    &tdHUp    &mt J SPACE  &tdKRight   &tdLSemi    &tdAposGrave   &mt RSHFT RET
+&tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdUpIN8      &tdON9       &tdPN0        &tdDelBslh
+&kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F  &tdGDown    &tdHUp    &tdLeftJSpace  &tdDownKRight   &tdRightLSemi    &tdAposGrave   &mt RSHFT RET
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &mt DOWN FSLH   &mt RSHFT RIGHT
 
             >;
