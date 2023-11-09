@@ -96,20 +96,20 @@
       bindings = <&kp U>, <&kp N7>;
     };
 
-    tdUpIN8: I_N8 {
+    tdIN8: I_N8 {
       compatible = "zmk,behavior-tap-dance";
       label = "in8";
       #binding-cells = <0>;
       tapping-term-ms = <170>;
-      bindings = <&mt UP I>, <&kp N8>;
+      bindings = <&kpI>, <&kp N8>;
     };
 
-    tdON9: O_N9 {
+    tdUpON9: O_N9 {
       compatible = "zmk,behavior-tap-dance";
       label = "on9";
       #binding-cells = <0>;
       tapping-term-ms = <170>;
-      bindings = <&kp O>, <&kp N9>;
+      bindings = <&mt UP O>, <&kp N9>;
     };
 
     tdPN0: P_N0 {
@@ -184,28 +184,28 @@
       bindings = <&mt LEFT SPACE>, <&kp J>;
     };
 
-    tdDownKRight: k_RIGHT {
+    tdLeftKRight: k_RIGHT {
       compatible = "zmk,behavior-tap-dance";
       label = "kright";
       #binding-cells = <0>;
       tapping-term-ms = <170>;
-      bindings = <&mt DOWN K>, <&kp RIGHT>;
+      bindings = <&mt Left K>, <&kp RIGHT>;
     };
 
-    tdRightLSemi: l_SEMI {
+    tdDownLSemi: l_SEMI {
       compatible = "zmk,behavior-tap-dance";
       label = "lsemi";
       #binding-cells = <0>;
       tapping-term-ms = <170>;
-      bindings = <&mt RIGHT L>, <&kp SEMI>;
+      bindings = <&mt DOWN L>, <&kp SEMI>;
     };
 
-    tdAposGrave: APOS_GRAVE {
+    tdRightAposGrave: APOS_GRAVE {
       compatible = "zmk,behavior-tap-dance";
       label = "semiapos";
       #binding-cells = <0>;
       tapping-term-ms = <170>;
-      bindings = <&kp APOS>, <&kp GRAVE>;
+      bindings = <&mt RIGHT APOS>, <&kp GRAVE>;
     };
 
     tdRshiftRet: RSHIFT_RET {
@@ -446,8 +446,8 @@ keymap {
   default_layer {
     bindings = <
 
-&tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdUpIN8      &tdON9       &tdPN0        &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F  &tdGDown    &tdHUp    &tdLeftJSpace  &tdDownKRight   &tdRightLSemi    &tdAposGrave   &mt RSHFT RET
+&tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdUpON9       &tdPN0        &tdDelBslh
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F  &kp G    &kp H    &mt SPACE J  &tdLeftKRight   &tdDownLSemi    &tdRightAposGrave   &mt RSHFT RET
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &sk RSHFT 
 
             >;
@@ -456,8 +456,8 @@ keymap {
   Num_layer {
     bindings = <
 
-&tdTabE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9        &kp N0        &kp DEL
-&sk LSHFT   &kp MINUS     &kp EQUAL    &kp LEFT    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp RIGHT   &tdRightLSemi     &tdAposGrave   &kp RETURN	
+&tdTabE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &mt UP N9        &kp N0        &kp DEL
+&sk LSHFT   &kp MINUS     &kp EQUAL    &kp SPACE    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp LEFT   &tdDownLSemi     &tdRightAposGrave   &kp RETURN	
 &kp LCTRL   &kp LALT       &kp LGUI 	   &tdCXZ     &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp FSLH     &sk RSHFT 
 
     >;
