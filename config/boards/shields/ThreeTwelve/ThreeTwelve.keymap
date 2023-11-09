@@ -101,7 +101,7 @@
       label = "in8";
       #binding-cells = <0>;
       tapping-term-ms = <170>;
-      bindings = <&kpI>, <&kp N8>;
+      bindings = <&kp I>, <&kp N8>;
     };
 
     tdUpON9: O_N9 {
