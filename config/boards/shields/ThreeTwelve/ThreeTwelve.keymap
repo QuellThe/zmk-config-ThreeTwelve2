@@ -15,7 +15,6 @@
 
 &mt {
   tapping-term-ms = <250>;
-  quick-tap-ms = <100>;
   flavor = "balanced";
 };
 
@@ -27,7 +26,6 @@
       label = "HOMEROW_MODS";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
-      quick-tap-ms = <100>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
@@ -61,7 +59,6 @@
       label = "en3";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      quick-tap-ms = <100>;
       bindings = <&kp E>, <&kp N3>;
     };
 
