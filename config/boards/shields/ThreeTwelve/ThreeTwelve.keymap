@@ -205,7 +205,7 @@
       label = "semiapos";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&mt UP APOS>, <&kp GRAVE>;
+      bindings = <&kp APOS>, <&kp GRAVE>;
     };
 
     tdRshiftRet: RSHIFT_RET {
@@ -448,7 +448,7 @@ keymap {
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdUpIN8      &tdON9       &tdPN0        &tdDelBslh
 &kp LSHFT   &tdAMinus    &tdSPlus    &tdDLeft    &mt SPACE F  &tdGDown    &tdHUp    &tdLeftJSpace  &tdDownKRight   &tdRightLSemi    &tdAposGrave   &mt RSHFT RET
-&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &mt DOWN FSLH   &mt RSHFT RIGHT
+&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &kp RSHFT 
 
             >;
         };	
@@ -457,8 +457,8 @@ keymap {
     bindings = <
 
 &tdTabE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9        &kp N0        &kp DEL
-&kp LSHFT   &kp MINUS     &kp EQUAL    &kp LEFT    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp RIGHT   &tdLSemi     &tdAposGrave   &kp RETURN	
-&kp LCTRL   &kp LALT       &kp LGUI 	   &tdCXZ      &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp FSLH 
+&kp LSHFT   &kp MINUS     &kp EQUAL    &kp LEFT    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp RIGHT   &tdRightLSemi     &tdAposGrave   &kp RETURN	
+&kp LCTRL   &kp LALT       &kp LGUI 	   &tdCXZ     &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp FSLH     &kp RSHFT 
 
     >;
   };
