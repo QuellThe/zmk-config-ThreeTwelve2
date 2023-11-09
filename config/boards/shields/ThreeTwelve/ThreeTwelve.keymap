@@ -101,7 +101,7 @@
       label = "in8";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp I>, <&kp N8>;
+      bindings = <&mt UP I>, <&kp N8>;
     };
 
     tdON9: O_N9 {
@@ -181,7 +181,7 @@
       label = "jspace";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp J>, <&kp SPACE>;
+      bindings = <&mt LEFT SPACE>, <&kp J>;
     };
 
     tdKRight: k_RIGHT {
@@ -189,7 +189,7 @@
       label = "kright";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp K>, <&kp RIGHT>;
+      bindings = <&mt DOWN K>, <&kp RIGHT>;
     };
 
     tdLSemi: l_SEMI {
@@ -197,7 +197,7 @@
       label = "lsemi";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp L>, <&kp SEMI>;
+      bindings = <&mt RIGHT L>, <&kp SEMI>;
     };
 
     tdAposGrave: APOS_GRAVE {
