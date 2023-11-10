@@ -13,7 +13,7 @@
 #define DEFAULT 0
 #define NUM     1
 
-#define COMBO(NAME, BINDINGS, KEYPOS) \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     timeout-ms = <80>; \
     bindings = <BINDINGS>; \
