@@ -152,54 +152,6 @@
       bindings = <&kp S>, <&kp EQUAL>;
     };
 
-    tdDLeft: d_LEFT {
-      compatible = "zmk,behavior-tap-dance";
-      label = "dleft";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp D>, <&kp LEFT>;
-    };
-
-    tdFSpace: F_SPACE {
-      compatible = "zmk,behavior-tap-dance";
-      label = "fspace";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp F>, <&kp SPACE>;
-    };
-
-    tdGDown: g_DOWN {
-      compatible = "zmk,behavior-tap-dance";
-      label = "gdown";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp G>, <&kp DOWN>;
-    };
-
-    tdHUp: h_UP {
-      compatible = "zmk,behavior-tap-dance";
-      label = "hup";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp H>, <&kp UP>;
-    };
-
-    tdLeftJSpace: j_SPACE {
-      compatible = "zmk,behavior-tap-dance";
-      label = "jspace";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&mt LEFT SPACE>, <&kp J>;
-    };
-
-    tdLeftKRight: k_RIGHT {
-      compatible = "zmk,behavior-tap-dance";
-      label = "kright";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&mt LEFT K>, <&kp RIGHT>;
-    };
-
     tdDownLSemi: l_SEMI {
       compatible = "zmk,behavior-tap-dance";
       label = "lsemi";
@@ -208,20 +160,12 @@
       bindings = <&mt DOWN L>, <&kp SEMI>;
     };
 
-    tdRightAposGrave: APOS_GRAVE {
+    tdRtApsGrv: APOS_GRAVE {
       compatible = "zmk,behavior-tap-dance";
       label = "semiapos";
       #binding-cells = <0>;
       tapping-term-ms = <170>;
       bindings = <&mt RIGHT APOS>, <&kp GRAVE>;
-    };
-
-    tdRshiftRet: RSHIFT_RET {
-      compatible = "zmk,behavior-tap-dance";
-      label = "rshiftret";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp RSHIFT>, <&kp RET>;
     };
 
     tdCXZ: z_x {
@@ -230,38 +174,6 @@
       #binding-cells = <0>;
       tapping-term-ms = <300>;
       bindings = <&kp C>, <&kp X>, <&kp Z>;
-    };
-
-    tdVSpace: v_SPACE {
-      compatible = "zmk,behavior-tap-dance";
-      label = "vspace";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp V>, <&kp SPACE>;
-    };
-
-    tdSpaceB: SPACE_b {
-      compatible = "zmk,behavior-tap-dance";
-      label = "spaceb";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp SPACE>, <&kp B>;
-    };
-
-    tdNSpace: n_SPACE {
-      compatible = "zmk,behavior-tap-dance";
-      label = "nspace";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp N>, <&kp SPACE>;
-    };
-
-    tdMSpace: m_SPACE{
-      compatible = "zmk,behavior-tap-dance";
-      label = "mspace";
-      #binding-cells = <0>;
-      tapping-term-ms = <170>;
-      bindings = <&kp M>, <&kp SPACE>;
     };
 
     tdCommaLbkt: COMMA_LBKT{
@@ -320,7 +232,7 @@ keymap {
     bindings = <
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdUpON9       &tdPN0        &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F  &kp G    &kp H    &mt J Space  &tdLeftKRight   &tdDownLSemi    &tdRightAposGrave   &kp RET
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F    &kp G       &kp H         &mt J Space  &mt Left K   &tdDownLSemi    &tdRtApsGrv   &kp RET
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &sk RSHFT 
 
             >;
