@@ -242,7 +242,7 @@ keymap {
     bindings = <
 
 &tdTabE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &mt UP N9        &kp N0        &kp DEL
-&sk LSHFT   &kp MINUS     &kp EQUAL    &kp SPACE    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp LEFT   &tdDnLSemi     & &tdRtApsGrv    &kp RETURN	
+&sk LSHFT   &kp MINUS     &kp EQUAL    &kp SPACE    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp LEFT   &tdDnLSemi     &tdRtApsGrv     &mt CAPS RET	
 &kp LCTRL   &kp LALT       &kp LGUI 	   &tdCXZ     &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp FSLH     &sk RSHFT 
 
     >;
