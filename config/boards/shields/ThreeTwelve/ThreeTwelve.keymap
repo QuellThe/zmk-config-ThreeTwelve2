@@ -34,8 +34,8 @@
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS";
       #binding-cells = <2>;
-      tapping-term-ms = <170>;
-      quick-tap-ms = <130>;
+      tapping-term-ms = <230>;
+      quick-tap-ms = <180>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
@@ -44,7 +44,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "tabe";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp TAB>, <&kp ESC>;
     };
 
@@ -52,7 +52,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "qn1";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp Q>, <&kp N1>;
     };
 
@@ -60,7 +60,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "wn2";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp W>, <&kp N2>;
     };
 
@@ -68,7 +68,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "en3";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp E>, <&kp N3>;
     };
 
@@ -76,7 +76,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "rn4";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp R>, <&kp N4>;
     };
 
@@ -84,7 +84,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "tn5";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp T>, <&kp N5>;
     };
 
@@ -92,7 +92,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "yn6";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp Y>, <&kp N6>;
     };
 
@@ -100,7 +100,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "un7";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp U>, <&kp N7>;
     };
 
@@ -108,7 +108,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "in8";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp I>, <&kp N8>;
     };
 
@@ -116,7 +116,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "on9";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&mt UP O>, <&kp N9>;
     };
 
@@ -124,7 +124,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "pn0";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp P>, <&kp N0>;
     };
 
@@ -140,7 +140,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "aminus";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp A>, <&kp MINUS>;
     };
 
@@ -156,7 +156,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "lsemi";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&mt DOWN L>, <&kp SEMI>;
     };
 
@@ -164,7 +164,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "semiapos";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&mt RIGHT APOS>, <&kp GRAVE>;
     };
 
@@ -180,7 +180,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "commalbkt";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&kp COMMA>, <&kp LBKT>;
     };
 
@@ -188,7 +188,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "dotbrkt";
       #binding-cells = <0>;
-      tapping-term-ms = <170>;
+      tapping-term-ms = <230>;
       bindings = <&mt LEFT DOT>, <&kp RBKT>;
     };
  };
