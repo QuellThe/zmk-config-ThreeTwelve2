@@ -232,7 +232,7 @@ keymap {
     bindings = <
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdUpON9       &tdPN0        &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F    &kp G       &kp H   &mt J SPACE   &mt Left K   &tdDownLSemi    &tdRtApsGrv   &mt CAPS RET
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F    &kp G       &kp H   &mt J SPACE   &mt LEFT K   &tdDownLSemi    &tdRtApsGrv   &mt CAPS RET
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &sk RSHFT 
 
             >;
