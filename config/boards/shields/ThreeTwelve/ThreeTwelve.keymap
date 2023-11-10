@@ -13,6 +13,14 @@
 #define DEFAULT 0
 #define NUM     1
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <80>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
 &mt {
   tapping-term-ms = <170>;
   quick-tap-ms = <80>;
@@ -272,170 +280,35 @@
       bindings = <&mt LEFT DOT>, <&kp RBKT>;
     };
  };
-
- combos {
-   compatible = "zmk,combos";
-   combo_fnone {
-     timeout-ms = <80>;
-     key-positions = <1 11>;
-     bindings = <&kp F1>;
-   };
-      
-   combo_fntwo {
-     timeout-ms = <80>;
-     key-positions = <2 11>;
-     bindings = <&kp F2>;
-   };
-     
-   combo_fnthree {
-     timeout-ms = <80>;
-     key-positions = <3 11>;
-     bindings = <&kp F3>;
-   };
-
-   combo_ffour {
-     timeout-ms = <80>;
-     key-positions = <4 11>;
-     bindings = <&kp F4>;
-   };
-    
-   combo_ffive {
-     timeout-ms = <80>;
-     key-positions = <5 11>;
-     bindings = <&kp F5>;
-   };
-    
-   combo_fsix {
-     timeout-ms = <80>;
-     key-positions = <0 6>;
-     bindings = <&kp F6>;
-   };
-      
-   combo_fnseven {
-     timeout-ms = <80>;
-     key-positions = <0 7>;
-     bindings = <&kp F7>;
-   };
-      
-   combo_fneight {
-     timeout-ms = <80>;
-     key-positions = <0 8>;
-     bindings = <&kp F8>;
-   };
-      
-   combo_fnnine {
-     timeout-ms = <80>;
-     key-positions = <0 9>;
-     bindings = <&kp F9>;
-   };
-      
-   
-   combo_fnten {
-     timeout-ms = <80>;
-     key-positions = <0 10>;
-     bindings = <&kp F10>;
-   };
-      
-   combo_fneleven {
-     timeout-ms = <80>;
-     key-positions = <0 11>;
-     bindings = <&kp F11>;
-   };
-      
-  combo_btzero{
-     timeout-ms = <80>;
-     key-positions = <0 11 24 35>;
-     bindings = <&bt BT_SEL 0>;
-   };
-      
-  combo_btone {
-     timeout-ms = <80>;
-     key-positions = <1 10 25 34>;
-     bindings = <&bt BT_SEL 1>;
-    };
-      
-  combo_bttwo{
-     timeout-ms = <80>;
-     key-positions = <2 9 26 33>;
-     bindings = <&bt BT_SEL 2>;
-    };
-      
-  combo_btthree {
-     timeout-ms = <80>;
-     key-positions = <3 27 8 32>;
-     bindings = <&bt BT_SEL 3>;
-    };
-      
-  combo_btfour {
-      timeout-ms = <80>;
-      key-positions = <4 28 7  31>;
-      bindings = <&bt BT_SEL 4>;
-    };
-      
-  combo_btclr {
-      timeout-ms = <80>;
-      key-positions = <5 6 29 30>;
-      bindings = <&bt BT_CLR>;
-    };
-      
-  combo_btout{
-      timeout-ms = <80>;
-      key-positions = <17 18>;
-      bindings = <&out OUT_TOG>;
-    };
-      
-  combo_briup {
-      timeout-ms = <80>;
-      key-positions = <1 2>;
-      bindings = <&kp C_BRI_UP>;
-    };
-      
-  combo_bridn{
-      timeout-ms = <80>;
-      key-positions = <0 1>;
-      bindings = <&kp C_BRI_DN>;
-    };
-      
-  combo_volup {
-      timeout-ms = <80>;
-      key-positions = <10 11>;
-      bindings = <&kp C_VOL_UP>;
-    };
-      
-  combo_mut {
-      timeout-ms = <80>;
-      key-positions = <9 10 11>;
-      bindings = <&kp C_MUTE>;
-    };
-      
-  combo_cpswrd {
-      timeout-ms = <80>;
-      key-positions = <12 23>;
-      bindings = <&kp CAPS>;
-    };
-      
-  combo_space {
-      timeout-ms = <80>;
-      key-positions = <29 30>;
-      bindings = <&kp SPACE>;
-    };
-      
-  combo_voldn {
-      timeout-ms = <80>;
-      key-positions = <9 10>;
-      bindings = <&kp C_VOL_DN>;
-    };
-      
-  combo_dfltlyr{
-      timeout-ms = <80>;
-      key-positions = <22 23>;
-      bindings = <&to 0 >;
-    };
-      
-  combo_numlyr{
-      timeout-ms = <80>;
-      key-positions = <34 35>;
-      bindings = <&to 1>;
+combos {
+        compatible = "zmk,combos";
+                      
+      COMBO(fnOne, &kp F1, 1 11)
+      COMBO(fTwo, &kp F2, 2 11)
+      COMBO(fThree, &kp F3, 3 11)
+      COMBO(fFour, &kp F4, 4 11)
+      COMBO(fFive, &kp F5, 5 11)
+      COMBO(fSix, &kp F6, 6 11)
+      COMBO(fSeven, &kp F7, 7 0)
+      COMBO(fEigth, &kp F8, 8 0)
+      COMBO(fNine, &kp F9, 9 0)
+      COMBO(fTen, &kp F10, 10,0)
+      COMBO(fEleven, &kp F11,11 0)
+      COMBO(btZero, &bt BT_SEL 0, 0 11 24 35)
+      COMBO(btOne, &bt BT_SEL 1, 1 10 25 34)
+      COMBO(btTwo, &bt BT_SEL 2, 2 9 26 33)
+      COMBO(btThree, &bt BT_SEL 3, 3 27 8 32)
+      COMBO(btFour, &bt BT_SEL 4, 4 28 7 31)
+      COMBO(btClr, &bt BT_CLR, 5 6 29 30)
+      COMBO(btOut, &out OUT_TOG, 17 18)
+      COMBO(briDn, &kp C_BRI_DN, 0 1)      
+      COMBO(briUP, &kp C_BRI_UP, 1 2)
+      COMBO(volDn, &kp C_VOL_DN, 9 10)
+      COMBO(volUp, &kp C_VOL_UP, 10 11)
+      COMBO(mut, &kp C_MUTE, 9 10 11)
+      COMBO(space, &kp SPACE, 29 30)
+      COMBO(dfltLyr, &to 0, 22 23)
+      COMBO(numLyr, &to 1, 34 35)
     };
   };
 
@@ -447,7 +320,7 @@ keymap {
     bindings = <
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdUpON9       &tdPN0        &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F  &kp G    &kp H    &mt SPACE J  &tdLeftKRight   &tdDownLSemi    &tdRightAposGrave   &mt RSHFT RET
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F  &kp G    &kp H    &mt SPACE J  &tdLeftKRight   &tdDownLSemi    &tdRightAposGrave   &mt CAPS RET
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &sk RSHFT 
 
             >;
