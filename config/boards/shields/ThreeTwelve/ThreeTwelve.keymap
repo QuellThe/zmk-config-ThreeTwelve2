@@ -294,6 +294,7 @@ combos {
       COMBO(fNine, &kp F9, 9 0, DEFAULT NUM)
       COMBO(fTen, &kp F10, 10 0, DEFAULT NUM)
       COMBO(fEleven, &kp F11, 11 0, DEFAULT NUM)
+      COMBO(caps, &kp CAPS, 12 23, DEFAULT NUM)
       COMBO(btZero, &bt BT_SEL 0, 0 11 24 35, DEFAULT NUM)
       COMBO(btOne, &bt BT_SEL 1, 1 10 25 34, DEFAULT NUM)
       COMBO(btTwo, &bt BT_SEL 2, 2 9 26 33, DEFAULT NUM)
@@ -319,7 +320,7 @@ keymap {
     bindings = <
 
 &tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdUpON9       &tdPN0        &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F  &kp G    &kp H    &mt J Space  &tdLeftKRight   &tdDownLSemi    &tdRightAposGrave   &mt CAPS RET
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F  &kp G    &kp H    &mt J Space  &tdLeftKRight   &tdDownLSemi    &tdRightAposGrave   &kp RET
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &sk RSHFT 
 
             >;
