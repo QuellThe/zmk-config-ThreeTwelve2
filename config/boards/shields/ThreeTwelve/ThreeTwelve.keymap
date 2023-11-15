@@ -239,9 +239,9 @@ keymap {
   default_layer {
     bindings = <
 
-&tdTabE     &tdQN1       &tdWN2      &tdEN3      &tdRN4      &tdTN5       &tdYN6       &tdUN7      &tdIN8      &tdUpON9       &tdPN0        &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F    &kp G       &kp H   &mt J SPACE   &mt LEFT K   &tdDnLSemi    &tdRtApsGrv   &tdRetCaps
-&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ     &mt SPACE V   &mt SPACE B  &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH   &sk RSHFT 
+&tdTabE     &tdQN1       &tdWN2      &tdEN3   &tdRN4        &tdTN5        &tdYN6       &tdUN7      &tdIN8         &tdUpON9     &tdPN0        &tdDelBslh
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F   &kp G         &kp H        &mt J SPACE   &mt LEFT K   &tdDnLSemi   &tdRtApsGrv   &tdRetCaps
+&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &mt SPACE V   &mt SPACE B   &mt SPACE N  &mt SPACE M  &tdCommaLbkt  &tdDotBrkt   &kp FSLH      &sk RSHFT 
 
             >;
         };	
@@ -249,10 +249,9 @@ keymap {
   Num_layer {
     bindings = <
 
-&tdTabE     &kp N1         &kp N2        &kp N3     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &mt UP N9        &kp N0        &kp DEL
-&sk LSHFT   &kp MINUS     &kp EQUAL    &kp SPACE    &kp SPACE    &kp DOWN    &kp UP      &kp SPACE   &kp LEFT   &tdDnLSemi     &tdRtApsGrv     &mt CAPS RET	
-&kp LCTRL   &kp LALT       &kp LGUI 	   &tdCXZ     &kp SPACE   &kp SPACE   &kp SPACE   &kp SPACE   &tdCommaLbkt  &tdDotBrkt    &kp FSLH     &sk RSHFT 
-
+&tdTabE     &kp N7    &kp N8    &kp N9   &mt $ BSPC  &kp PERCENT   &kp CARET    &kp AMPS     &kp STAR     &kp UP      &kp N0     &kp DEL
+&sk LSHFT   &kp N4    &kp N5    &kp N6   &kp MINUS   &kp TAB       &mt BSPC X   &kp SPACE    &kp LEFT     &tdDnLSemi  &kp RIGHT  &kp RET	
+&mt Dot N0  &kp N1    &kp N2 	  &kp N3   &kp PLUS    &kp RET       &kp SPACE    &kp SPACE    &kp COMMA    &kp Dot     &kp FSLH   &sk RSHFT 
     >;
   };
  };
