@@ -110,7 +110,7 @@
       label = "in8";
       #binding-cells = <0>;
       tapping-term-ms = <230>;
-      bindings = <&kp I>, <&kp N8>;
+      bindings = <&kp I>, <&kp N8>, <&kp C_MUTE>;
     };
 
     tdON9: O_N9 {
@@ -228,7 +228,7 @@ combos {
 
       COMBO(briDn, &kp C_BRI_DN, 0 1, DEFAULT NUM BT)
       COMBO(briUP, &kp C_BRI_UP, 1 2, DEFAULT NUM BT)
-      COMBO(mute, &kp C_MUTE, 9 10 11, DEFAULT NUM BT)
+      COMBO(mute, &kp C_MUTE,8 9 10, DEFAULT NUM BT)
       
       COMBO(dfltLyr, &to 0, 8 32, DEFAULT NUM BT)
       COMBO(numLyr, &to 1, 9 33, DEFAULT NUM BT)
