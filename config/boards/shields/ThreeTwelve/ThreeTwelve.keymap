@@ -244,6 +244,11 @@ combos {
       COMBO(up, &kp UP, 8 9, DEFAULT NUM)
       COMBO(down, &kp DOWN, 32 33, DEFAULT NUM)
       COMBO(right, &kp RIGHT, 21 22, DEFAULT NUM)
+
+      COMBO(pageup, &kp PG_UP, 8 9 12, DEFAULT NUM)
+      COMBO(pageDp, &kp PG_DN, 12 32 33, DEFAULT NUM)
+      COMBO(home, &kp HOME, 12 19 20, DEFAULT NUM)
+      COMBO(end, &kp END, 12 21 22, DEFAULT NUM)
     };
 
 
