@@ -118,7 +118,7 @@
       label = "on9";
       #binding-cells = <0>;
       tapping-term-ms = <230>;
-      bindings = <&kp O>, <&kp N9>;
+      bindings = <&kp O>, <&kp N9>, <&kp C_VOL_DN>;
     };
 
     tdPN0: P_N0 {
@@ -126,7 +126,7 @@
       label = "pn0";
       #binding-cells = <0>;
       tapping-term-ms = <230>;
-      bindings = <&kp P>, <&kp N0>;
+      bindings = <&kp P>, <&kp N0>, <&kp C_VOL_UP>;
     };
 
     tdDelBslh: DEL_BSLASH {
@@ -226,14 +226,14 @@ combos {
 
       COMBO(caps, &kp CAPS, 12 23, DEFAULT NUM BT)
 
-      COMBO(btOut, &out OUT_TOG, 17 18, DEFAULT NUM BT)
-
       COMBO(briDn, &kp C_BRI_DN, 0 1, DEFAULT NUM BT)
       COMBO(briUP, &kp C_BRI_UP, 1 2, DEFAULT NUM BT)
+      COMBO(briUP, &kp C_MUT, 9 10 11, DEFAULT NUM BT)
       
       COMBO(dfltLyr, &to 0, 22 23, DEFAULT NUM BT)
       COMBO(numLyr, &to 1, 34 35, DEFAULT NUM BT)
       COMBO(btLyr, &to 2, 10 34, DEFAULT NUM BT)
+      COMBO(btOut, &out OUT_TOG, 17 18, DEFAULT NUM BT)
 
       COMBO(left, &kp LEFT, 19 20, DEFAULT NUM BT)
       COMBO(up, &kp UP, 8 9, DEFAULT NUM BT)
@@ -253,9 +253,9 @@ keymap {
   default_layer {
     bindings = <
 
-&tdTabE     &tdQN1       &tdWN2      &tdEN3   &tdRN4        &tdTN5        &tdYN6       &tdUN7        &tdIN8       &tdON9     &tdPN0        &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F   &kp G         &kp H        &mt J SPACE   &kp K        &tdLSemi   &tdApsGrv   &tdRetCaps
-&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &mt SPACE V   &mt SPACE B   &mt SPACE N  &mt SPACE M   &tdCommaLbkt  &tdDotBrkt   &kp FSLH      &sk RSHFT 
+&tdTabE     &tdQN1       &tdWN2      &tdEN3   &tdRN4        &tdTN5        &tdYN6       &tdUN7        &tdIN8       &tdON9       &tdPN0     &tdDelBslh
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F   &kp G         &kp H        &mt J SPACE   &kp K        &tdLSemi     &tdApsGrv  &tdRetCaps
+&kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &mt SPACE V   &mt SPACE B   &mt SPACE N  &mt SPACE M   &tdCommaLbkt  &tdDotBrkt  &kp FSLH   &sk RSHFT 
 
             >;
         };	
@@ -263,9 +263,9 @@ keymap {
   Num_layer {
     bindings = <
 
-&tdTabE     &kp N7    &kp N8    &kp N9   &tdBspcDllr  &kp PERCENT   &kp CARET    &kp AMPS     &kp STAR     &kp UP      &kp N0     &tdDelBslh
-&sk LSHFT   &kp N4    &kp N5    &kp N6   &kp MINUS   &kp TAB       &mt BSPC X   &kp SPACE    &kp LEFT     &tdLSemi  &tdApsGrv  &kp RET	
-&mt DOT N0  &kp N1    &kp N2 	  &kp N3   &kp EQUAL    &kp RET       &kp SPACE    &kp SPACE    &kp COMMA    &kp DOT     &kp FSLH   &sk RSHFT 
+&tdTabE     &kp N7    &kp N8    &kp N9   &tdBspcDllr  &kp PRCNT   &kp CARET    &kp AMPS     &kp STAR     &kp UP      &kp N0     &tdDelBslh
+&sk LSHFT   &kp N4    &kp N5    &kp N6   &kp MINUS    &kp TAB     &mt BSPC X   &kp SPACE    &kp LEFT     &tdLSemi    &tdApsGrv  &kp RET	
+&mt DOT N0  &kp N1    &kp N2 	  &kp N3   &kp EQUAL    &kp RET     &kp SPACE    &kp SPACE    &kp COMMA    &kp DOT     &kp FSLH   &sk RSHFT 
     >;
   };
 
@@ -273,7 +273,7 @@ keymap {
   Bt_layer {
     bindings = <
 
-&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4 &kp B &kp B &kp B &kp B &kp B &kp B &kp B 
+&bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 &kp B &kp B &kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN  &kp C_MUT &kp C_VOL_UP 
 &kp B &kp B &kp B &kp B &bt BT_CLR &kp B &kp B &kp B &kp B &kp B &kp B &kp B 
 &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B 
     >;
