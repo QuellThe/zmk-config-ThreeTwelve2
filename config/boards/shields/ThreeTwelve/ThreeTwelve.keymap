@@ -109,7 +109,7 @@
       label = "in8";
       #binding-cells = <0>;
       tapping-term-ms = <300>;
-      bindings = <&kp I>, <&kp N8>, <&kp C_VOL_DOWN>;
+      bindings = <&kp I>, <&kp N8>, <&kp C_VOL_DN>;
     };
 
     tdON9: O_N9 {
@@ -221,7 +221,6 @@ combos {
       COMBO(fEigth, &kp F8, 8 0, DEFAULT NUM BT)
       COMBO(fNine, &kp F9, 9 0, DEFAULT NUM BT)
       COMBO(fTen, &kp F10, 10 0, DEFAULT NUM BT)
-      COMBO(fEleven, &kp F11, 11 0, DEFAULT NUM BT)
 
       COMBO(caps, &kp CAPS, 12 23, DEFAULT NUM BT)
 
