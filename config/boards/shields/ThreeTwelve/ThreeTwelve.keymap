@@ -12,7 +12,7 @@
 
 #define DEFAULT 0
 #define NUM     1
-#define BT      3
+#define BT      2
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
@@ -278,7 +278,7 @@ keymap {
     bindings = <
 
 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4 &kp B &kp B &kp B &kp B &kp B &kp B &kp B 
-&kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &bt BT_CLR &kp B 
+&kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &bt BT_CLR &kp B &kp B 
 &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B 
     >;
   };
