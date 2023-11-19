@@ -24,7 +24,7 @@
   };
 
 &mt {
-  tapping-term-ms = <150>;
+  tapping-term-ms = <210>;
   quick-tap-ms = <110>;
   flavor = "balanced";
 };
@@ -238,7 +238,7 @@ combos {
       COMBO(left, &kp LEFT, 19 20, DEFAULT NUM BT)
       COMBO(up, &kp UP, 8 9, DEFAULT NUM BT)
       COMBO(down, &kp DOWN, 32 33, DEFAULT NUM BT)
-      COMBO(right, &kp RIGHT, 21 22, DEFAULT NUM BT)
+      COMBO(right, &kp RIGHT, 20 21, DEFAULT NUM BT)
 
       COMBO(pageup, &kp PG_UP, 8 9 16, DEFAULT NUM BT)
       COMBO(pageDp, &kp PG_DN, 16 32 33, DEFAULT NUM BT)
