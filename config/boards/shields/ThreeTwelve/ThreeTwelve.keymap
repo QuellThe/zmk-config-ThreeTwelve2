@@ -17,14 +17,14 @@
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     timeout-ms = <60>; \
-    require-prior-idle-ms = <190>; \
+    require-prior-idle-ms = <220>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
   };
 
 &mt {
-  tapping-term-ms = <160>;
+  tapping-term-ms = <200>;
   quick-tap-ms = <110>;
   flavor = "balanced";
 };
@@ -245,8 +245,8 @@ combos {
 
       COMBO(pageup, &kp PG_UP, 8 9 16, DEFAULT NUM BT)
       COMBO(pageDp, &kp PG_DN, 16 32 33, DEFAULT NUM BT)
-      COMBO(home, &kp HOME, 16 19 20, DEFAULT NUM BT)
-      COMBO(end, &kp END, 16 20 21, DEFAULT NUM BT)
+      COMBO(home, &kp HOME, 18 19, DEFAULT NUM BT)
+      COMBO(end, &kp END, 21 22, DEFAULT NUM BT)
     };
 
 
