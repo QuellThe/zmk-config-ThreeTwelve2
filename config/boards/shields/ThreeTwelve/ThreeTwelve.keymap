@@ -228,7 +228,7 @@ combos {
 
       COMBO(briDn, &kp C_BRI_DN, 0 1, DEFAULT NUM BT)
       COMBO(briUP, &kp C_BRI_UP, 1 2, DEFAULT NUM BT)
-      COMBO(mute, &kp C_MUTE, 9 10 11, DEFAULT NUM BT)
+      COMBO(mute, &kp C_MUTE, 10 11, DEFAULT NUM BT)
       COMBO(volup, &kp C_VOL_UP,9 10, DEFAULT NUM BT)
       COMBO(voldn, &kp C_VOL_DN, 7 8, DEFAULT NUM BT)
 
