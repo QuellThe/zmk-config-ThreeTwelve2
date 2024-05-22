@@ -17,7 +17,7 @@
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     timeout-ms = <60>; \
-    require-prior-idle-ms = <220>; \
+    require-prior-idle-ms = <230>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
@@ -228,7 +228,7 @@ combos {
 
       COMBO(briDn, &kp C_BRI_DN, 0 1, DEFAULT NUM BT)
       COMBO(briUP, &kp C_BRI_UP, 1 2, DEFAULT NUM BT)
-      COMBO(mute, &kp C_MUTE, 10 11, DEFAULT NUM BT)
+      COMBO(mute, &kp C_MUTE, 8 9 10, DEFAULT NUM BT)
       COMBO(volup, &kp C_VOL_UP,9 10, DEFAULT NUM BT)
       COMBO(voldn, &kp C_VOL_DN, 7 8, DEFAULT NUM BT)
 
@@ -257,7 +257,7 @@ keymap {
     bindings = <
 
 &mt ESC TAB     &mt N1 Q       &mt N2 W      &mt N3 E   &mt N4 R        &mt N5 T        &mt N6 Y       &mt N7 U        &mt N8 I       &mt N9 O       &mt N0 P     &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F   &kp G         &kp H        &mt J SPACE   &kp K        &tdLSemi     &tdApsGrv  &tdRetCaps
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &mt SPACE F   &kp G         &kp H        &mt J SPACE   &kp K        &tdLSemi     &tdApsGrv  &kp RET
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &mt SPACE V   &mt SPACE B   &mt SPACE N  &mt SPACE M   &tdCommaLbkt  &tdDotBrkt  &kp FSLH   &sk RSHFT 
 
             >;
