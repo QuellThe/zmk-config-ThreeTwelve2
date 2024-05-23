@@ -208,7 +208,15 @@
       tapping-term-ms = <230>;
       bindings = <&kp BSPC>, <&kp DLLR>;
     };
-     
+
+    tdPMute: P_MUTE {
+      compatible = "zmk,behavior-tap-dance";
+      label = "bspc_dllr";
+      #binding-cells = <0>;
+      tapping-term-ms = <230>;
+      bindings = <&k P>, <&kp P>, <&kp C_MUTE>;
+    };
+
  };
 combos {
         compatible = "zmk,combos";
@@ -257,7 +265,7 @@ keymap {
   default_layer {
     bindings = <
 
-&mt ESC TAB     &mt N1 Q       &mt N2 W      &mt N3 E   &mt N4 R        &mt N5 T        &mt N6 Y       &mt N7 U        &tdIN8       &mt N9 O       &mt N0 P     &tdDelBslh
+&mt ESC TAB     &mt N1 Q       &mt N2 W      &mt N3 E   &mt N4 R        &mt N5 T        &mt N6 Y       &mt N7 U        &mt N8 I      &mt N9 O    &mt N0 &tdPMute     &tdDelBslh
 &sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &kp F   &kp G         &kp H        &mt J SPACE   &kp K        &tdLSemi     &tdApsGrv  &tdRetCaps
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &mt SPACE V   &mt SPACE B   &mt SPACE N  &mt SPACE M   &tdCommaLbkt  &tdDotBrkt  &kp FSLH   &sk RSHFT 
 
