@@ -211,10 +211,10 @@
 
     tdPMute: P_MUTE {
       compatible = "zmk,behavior-tap-dance";
-      label = "bspc_dllr";
+      label = "P_mute";
       #binding-cells = <0>;
       tapping-term-ms = <230>;
-      bindings = <&k P>, <&kp P>, <&kp C_MUTE>;
+      bindings = <&kp P>, <&kp P>, <&kp C_MUTE>;
     };
 
  };
