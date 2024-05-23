@@ -209,15 +209,6 @@
       bindings = <&kp BSPC>, <&kp DLLR>;
     };
      
-    tdMuteF: MUTE_F {
-      compatible = "zmk,behavior-tap-dance";
-      label = "bspc_dllr";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp F>, <&kp F>,<&kp C_MUTE>;
-    };
-
-
  };
 combos {
         compatible = "zmk,combos";
