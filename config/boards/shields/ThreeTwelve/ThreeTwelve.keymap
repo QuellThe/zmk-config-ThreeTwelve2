@@ -267,7 +267,7 @@ keymap {
     bindings = <
 
 &mt ESC TAB     &mt N1 Q       &mt N2 W      &mt N3 E   &mt N4 R        &mt N5 T        &mt N6 Y       &mt N7 U        &mt N8 I       &mt N9 O       &mt N0 P     &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &td muteF   &kp G         &kp H        &mt J SPACE   &kp K        &tdLSemi     &tdApsGrv  &kp RET
+&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &tdMuteF   &kp G         &kp H        &mt J SPACE   &kp K        &tdLSemi     &tdApsGrv  &tdRetCaps
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &mt SPACE V   &mt SPACE B   &mt SPACE N  &mt SPACE M   &tdCommaLbkt  &tdDotBrkt  &kp FSLH   &sk RSHFT 
 
             >;
