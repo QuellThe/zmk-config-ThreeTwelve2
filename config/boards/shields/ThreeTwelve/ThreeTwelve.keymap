@@ -41,94 +41,6 @@
       bindings = <&kp>, <&kp>;
     };
 
-    tdTabE: Tab_Esc {
-      compatible = "zmk,behavior-tap-dance";
-      label = "tabe";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp TAB>, <&kp ESC>;
-    };
-
-    tdQN1: Q_N1 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "qn1";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp Q>, <&kp N1>;
-    };
-
-    tdWN2: W_N2 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "wn2";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp W>, <&kp N2>;
-    };
-
-    tdEN3: E_N3 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "en3";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp E>, <&kp N3>;
-    };
-
-    tdRN4: R_N4 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "rn4";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp R>, <&kp N4>;
-    };
-
-    tdTN5: T_N5 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "tn5";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp T>, <&kp N5>;
-    };
-
-    tdYN6: Y_N6 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "yn6";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp Y>, <&kp N6>;
-    };
-
-    tdUN7: U_N7 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "un7";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp U>, <&kp N7>;
-    };
-
-    tdIN8: I_N8 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "in8";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp I>, <&kp N8>, <&kp C_MUTE>;
-    };
-
-    tdON9: O_N9 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "on9";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp O>, <&kp N9>, <&kp C_VOL_DN>;
-    };
-
-    tdPN0: P_N0 {
-      compatible = "zmk,behavior-tap-dance";
-      label = "pn0";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp P>, <&kp N0>, <&kp C_VOL_UP>;
-    };
-
     tdDelBslh: DEL_BSLASH {
       compatible = "zmk,behavior-tap-dance";
       label = "delbslh";
@@ -265,8 +177,8 @@ keymap {
   default_layer {
     bindings = <
 
-&mt ESC TAB     &mt N1 Q       &mt N2 W      &mt N3 E   &mt N4 R        &mt N5 T        &mt N6 Y       &mt N7 U        &mt N8 I      &mt N9 O    &mt N0 &tdPMute     &tdDelBslh
-&sk LSHFT   &tdAMinus    &tdSPlus    &kp D    &kp F   &kp G         &kp H        &mt J SPACE   &kp K        &tdLSemi     &tdApsGrv  &tdRetCaps
+&mt ESC TAB   &mt N1 Q     &mt N2 W   &mt N3 E  &mt N4 R    &mt N5 T    &mt N6 Y    &mt N7 U    &mt N8 I    &mt N9 O   &mt N0 P   &tdDelBslh
+&sk LSHFT   &tdAMinus    &tdSPlus     &kp D     &kp F      &kp G     &kp H    &mt J SPACE   &kp K   &tdLSemi     &tdApsGrv  &tdRetCaps
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &mt SPACE V   &mt SPACE B   &mt SPACE N  &mt SPACE M   &tdCommaLbkt  &tdDotBrkt  &kp FSLH   &sk RSHFT 
 
             >;
