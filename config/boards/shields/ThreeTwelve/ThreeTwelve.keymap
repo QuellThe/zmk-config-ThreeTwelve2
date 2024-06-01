@@ -24,8 +24,8 @@
   };
 
 &mt {
-  tapping-term-ms = <201>;
-  quick-tap-ms = <110>;
+  tapping-term-ms = <210>;
+  quick-tap-ms = <180>;
   flavor = "tap-preferred";
 };
 
@@ -146,6 +146,8 @@ combos {
       COMBO(fEleven, &kp F11, 11 0, DEFAULT NUM BT)
 
       COMBO(caps, &kp CAPS, 12 23, DEFAULT NUM BT)
+
+      COMBO(J, &kp J, 16 19, DEFAULT)
 
       COMBO(briDn, &kp C_BRI_DN, 0 1, DEFAULT NUM BT)
       COMBO(briUP, &kp C_BRI_UP, 1 2, DEFAULT NUM BT)
