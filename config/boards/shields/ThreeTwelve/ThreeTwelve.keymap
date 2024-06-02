@@ -148,6 +148,8 @@ combos {
       COMBO(caps, &kp CAPS, 12 23, DEFAULT NUM BT)
 
       COMBO(J, &kp J, 16 19, DEFAULT)
+      COMBO(X, &kp X, 19 27, DEFAULT)
+      COMBO(Z, &kp Z,11 27, DEFAULT)
 
       COMBO(briDn, &kp C_BRI_DN, 0 1, DEFAULT NUM BT)
       COMBO(briUP, &kp C_BRI_UP, 1 2, DEFAULT NUM BT)
