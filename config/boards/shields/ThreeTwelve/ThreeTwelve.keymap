@@ -24,7 +24,7 @@
   };
 
 &mt {
-  tapping-term-ms = <210>;
+  tapping-term-ms = <230>;
   quick-tap-ms = <180>;
   flavor = "tap-preferred";
 };
@@ -140,7 +140,7 @@ combos {
       COMBO(fFive, &kp F5, 5 11, DEFAULT NUM BT)
       COMBO(fSix, &kp F6, 6 11, DEFAULT NUM BT)
       COMBO(fSeven, &kp F7, 7 0, DEFAULT NUM BT)
-      COMBO(fEigth, &kp F8, 8 0, DEFAULT NUM BT)
+      COMBO(fEight, &kp F8, 8 0, DEFAULT NUM BT)
       COMBO(fNine, &kp F9, 9 0, DEFAULT NUM BT)
       COMBO(fTen, &kp F10, 10 0, DEFAULT NUM BT)
       COMBO(fEleven, &kp F11, 11 0, DEFAULT NUM BT)
@@ -149,7 +149,7 @@ combos {
 
       COMBO(J, &kp J, 16 19, DEFAULT)
       COMBO(X, &kp X, 19 27, DEFAULT)
-      COMBO(Z, &kp Z,11 27, DEFAULT)
+      COMBO(Z, &kp Z, 11 27, DEFAULT)
 
       COMBO(briDn, &kp C_BRI_DN, 0 1, DEFAULT NUM BT)
       COMBO(briUP, &kp C_BRI_UP, 1 2, DEFAULT NUM BT)
