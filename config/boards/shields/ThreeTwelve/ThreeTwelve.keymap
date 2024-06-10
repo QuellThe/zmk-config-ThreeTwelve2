@@ -17,7 +17,7 @@
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     timeout-ms = <60>; \
-    require-prior-idle-ms = <230>; \
+    require-prior-idle-ms = <300>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
