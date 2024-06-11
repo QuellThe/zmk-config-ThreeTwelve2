@@ -94,7 +94,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "cxz";
       #binding-cells = <0>;
-      tapping-term-ms = <210>;
+      tapping-term-ms = <220>;
       bindings = <&kp C>, <&kp X>, <&kp Z>;
     };
 
