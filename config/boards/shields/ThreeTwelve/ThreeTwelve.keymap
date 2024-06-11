@@ -36,7 +36,7 @@
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS";
       #binding-cells = <2>;
-      tapping-term-ms = <160>;
+      tapping-term-ms = <200>;
       quick-tap-ms = <100>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
@@ -54,7 +54,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "aminus";
       #binding-cells = <0>;
-      tapping-term-ms = <230>;
+      tapping-term-ms = <200>;
       bindings = <&kp A>, <&kp MINUS>;
     };
 
@@ -70,7 +70,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "lsemi";
       #binding-cells = <0>;
-      tapping-term-ms = <230>;
+      tapping-term-ms = <170>;
       bindings = <&kp L>, <&kp SEMI>;
     };
 
@@ -78,7 +78,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "aposgrave";
       #binding-cells = <0>;
-      tapping-term-ms = <230>;
+      tapping-term-ms = <170>;
       bindings = <&kp APOS>, <&kp GRAVE>;
     };
     
@@ -86,7 +86,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "retcaps";
       #binding-cells = <0>;
-      tapping-term-ms = <230>;
+      tapping-term-ms = <130>;
       bindings = <&kp RET>, <&kp CAPS>;
     };
 
@@ -94,7 +94,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "cxz";
       #binding-cells = <0>;
-      tapping-term-ms = <160>;
+      tapping-term-ms = <180>;
       bindings = <&kp C>, <&kp X>, <&kp Z>;
     };
 
@@ -102,7 +102,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "commalbkt";
       #binding-cells = <0>;
-      tapping-term-ms = <230>;
+      tapping-term-ms = <180>;
       bindings = <&kp COMMA>, <&kp LBKT>;
     };
 
@@ -110,7 +110,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "dotbrkt";
       #binding-cells = <0>;
-      tapping-term-ms = <230>;
+      tapping-term-ms = <180>;
       bindings = <&mt LEFT DOT>, <&kp RBKT>;
      };
 
@@ -120,14 +120,6 @@
       #binding-cells = <0>;
       tapping-term-ms = <230>;
       bindings = <&kp BSPC>, <&kp DLLR>;
-    };
-
-    tdPMute: P_MUTE {
-      compatible = "zmk,behavior-tap-dance";
-      label = "P_mute";
-      #binding-cells = <0>;
-      tapping-term-ms = <230>;
-      bindings = <&kp P>, <&kp P>, <&kp C_MUTE>;
     };
 
  };
