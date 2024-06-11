@@ -70,7 +70,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "lsemi";
       #binding-cells = <0>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <190>;
       bindings = <&kp L>, <&kp SEMI>;
     };
 
@@ -78,7 +78,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "aposgrave";
       #binding-cells = <0>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <190>;
       bindings = <&kp APOS>, <&kp GRAVE>;
     };
     
@@ -86,7 +86,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "retcaps";
       #binding-cells = <0>;
-      tapping-term-ms = <180>;
+      tapping-term-ms = <190>;
       bindings = <&kp RET>, <&kp CAPS>;
     };
 
@@ -102,7 +102,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "commalbkt";
       #binding-cells = <0>;
-      tapping-term-ms = <180>;
+      tapping-term-ms = <190>;
       bindings = <&kp COMMA>, <&kp LBKT>;
     };
 
@@ -110,7 +110,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "dotbrkt";
       #binding-cells = <0>;
-      tapping-term-ms = <180>;
+      tapping-term-ms = <190>;
       bindings = <&mt LEFT DOT>, <&kp RBKT>;
      };
 
