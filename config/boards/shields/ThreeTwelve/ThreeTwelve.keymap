@@ -118,7 +118,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "bspc_dllr";
       #binding-cells = <0>;
-      tapping-term-ms = <230>;
+      tapping-term-ms = <210>;
       bindings = <&kp BSPC>, <&kp DLLR>;
     };
 
