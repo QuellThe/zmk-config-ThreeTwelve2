@@ -1,6 +1,6 @@
-if SHIELD_THREETWELVE1
+if SHIELD_THREETWELVE
 
 config ZMK_KEYBOARD_NAME
-    default "ThreeTwelve1"
+    default "ThreeTwelve"
 
 endif
