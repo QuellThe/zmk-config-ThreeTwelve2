@@ -47,7 +47,7 @@
       label = "delbslh";
       #binding-cells = <0>;
       tapping-term-ms = <300>;
-      bindings = <&kp BSPC>, <&kp DEL>, <&kp BSLH>;
+      bindings = <&kp BSPC>, <&kp BSPC>, <&kp BSLH>;
     };
 
     tdAMinus: A_MINUS {
@@ -136,7 +136,10 @@ combos {
       COMBO(fEight, &kp F8, 8 0, DEFAULT NUM BT)
       COMBO(fNine, &kp F9, 9 0, DEFAULT NUM BT)
       COMBO(fTen, &kp F10, 10 0, DEFAULT NUM BT)
-      COMBO(fEleven, &kp F11, 11 0, DEFAULT NUM BT)
+      COMBO(fEleven, &kp F11, 11 0, DEFAULT NUM BT) 
+
+      COMBO(del, &kp DEL, 10 11, DEFAULT NUM BT)
+
 
       COMBO(caps, &kp CAPS, 12 23, DEFAULT NUM BT)
 
@@ -175,7 +178,7 @@ keymap {
     bindings = <
 
 &mt ESC TAB   &mt N1 Q     &mt N2 W   &mt N3 E  &mt N4 R    &mt N5 T    &mt N6 Y    &mt N7 U    &mt N8 I    &mt N9 O   &mt N0 P   &tdDelBslh
-&kp LSHFT   &tdAMinus    &tdSPlus     &kp D     &kp F      &kp G     &kp H    &mt J SPACE   &kp K   &tdLSemi     &tdApsGrv  &tdRetCaps
+&kp LSHFT   &tdAMinus    &tdSPlus     &kp D     &kp F      &kp G     &kp H    &mt J SPACE   &kp K   &tdLSemi     &tdApsGrv  &kp RET
 &kp LCTRL   &kp LALT     &kp LGUI    &tdCXZ   &mt SPACE V   &mt SPACE B   &mt SPACE N  &mt SPACE M   &tdCommaLbkt  &tdDotBrkt  &kp FSLH   &kp RSHFT 
 
             >;
