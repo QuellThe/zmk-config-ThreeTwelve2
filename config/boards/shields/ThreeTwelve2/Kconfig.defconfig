@@ -1,0 +1,6 @@
+if SHIELD_THREETWELVE2
+
+config ZMK_KEYBOARD_NAME
+    default "ThreeTwelve2"
+
+endif
