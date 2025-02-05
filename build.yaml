@@ -14,4 +14,4 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: ThreeTwelve2
+    shield: ThreeTwelve21
