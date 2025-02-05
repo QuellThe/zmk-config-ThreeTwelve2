@@ -138,7 +138,7 @@ combos {
       COMBO(fTen, &kp F10, 10 0, DEFAULT NUM BT)
       COMBO(fEleven, &kp F11, 11 0, DEFAULT NUM BT) 
 
-      COMBO(del, &kp DEL, 10 11, DEFAULT NUM BT)
+      COMBO(del, &kp DEL, 22 23, DEFAULT NUM BT)
 
 
       COMBO(caps, &kp CAPS, 12 23, DEFAULT NUM BT)
